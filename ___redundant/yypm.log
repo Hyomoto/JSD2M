@@ -1,0 +1,1257 @@
+[13-10-2020 16:40:23] Initialized GameMaker Project: JSDocToMarkdown.yyp
+[13-10-2020 16:40:23] Checking sprites
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites
+[13-10-2020 16:40:23] Checking scripts
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts
+[13-10-2020 16:40:23] Checking rooms
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/rooms
+[13-10-2020 16:40:23] Checking options
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options
+[13-10-2020 16:40:23] Checking objects
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects
+[13-10-2020 16:40:23] Checking notes
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes
+[13-10-2020 16:40:23] Checking JSDocToMarkdown.yyp
+[13-10-2020 16:40:23] Checking fonts
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts
+[13-10-2020 16:40:23] Checking datafiles
+[13-10-2020 16:40:23] Reading Datafiles...
+[13-10-2020 16:40:23] Checking font_sys_debug
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font_sys_debug
+[13-10-2020 16:40:23] Checking font0
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font0
+[13-10-2020 16:40:23] Checking font0.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font0/font0.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font0/font0.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font0/font0.yy"
+[13-10-2020 16:40:23] Found Font: font0
+[13-10-2020 16:40:23] Checking font0.png
+[13-10-2020 16:40:23] Checking font.old.yy
+[13-10-2020 16:40:23] Redundant file: font.old.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking font.old.png
+[13-10-2020 16:40:23] Checking Consolas.old.yy
+[13-10-2020 16:40:23] Redundant file: Consolas.old.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking Consolas.old.png
+[13-10-2020 16:40:23] Checking font_sys_debug.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font_sys_debug/font_sys_debug.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font_sys_debug/font_sys_debug.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Fonts" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/fonts/font_sys_debug/font_sys_debug.yy"
+[13-10-2020 16:40:23] Found Font: font_sys_debug
+[13-10-2020 16:40:23] Checking font_sys_debug.png
+[13-10-2020 16:40:23] Checking Manual_Files
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Files
+[13-10-2020 16:40:23] Checking Manual_Database
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Database
+[13-10-2020 16:40:23] Checking Manual_Database.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Database/Manual_Database.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Database/Manual_Database.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Database/Manual" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Database/Manual_Database.yy"
+[13-10-2020 16:40:23] Found Note: Manual_Database
+[13-10-2020 16:40:23] Checking Manual_Database.txt
+[13-10-2020 16:40:23] Checking Manual_Files.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Files/Manual_Files.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Files/Manual_Files.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/File Handling/Manual" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/notes/Manual_Files/Manual_Files.yy"
+[13-10-2020 16:40:23] Found Note: Manual_Files
+[13-10-2020 16:40:23] Checking __FASTtool
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/__FASTtool
+[13-10-2020 16:40:23] Checking oTextbox
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oTextbox
+[13-10-2020 16:40:23] Checking oStatusbar
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oStatusbar
+[13-10-2020 16:40:23] Checking oRenderStack
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oRenderStack
+[13-10-2020 16:40:23] Checking oLoading
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oLoading
+[13-10-2020 16:40:23] Checking oGenerator5
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator5
+[13-10-2020 16:40:23] Checking oGenerator
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator
+[13-10-2020 16:40:23] Checking oConsole
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oConsole
+[13-10-2020 16:40:23] Checking oButtonSaveTo
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveTo
+[13-10-2020 16:40:23] Checking oButtonSaveFormat
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveFormat
+[13-10-2020 16:40:23] Checking oButtonRun
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonRun
+[13-10-2020 16:40:23] Checking oButtonLoadFrom
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonLoadFrom
+[13-10-2020 16:40:23] Checking oButton
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButton
+[13-10-2020 16:40:23] Checking FASTRender
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/FASTRender
+[13-10-2020 16:40:23] Checking FASTRender.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/FASTRender/FASTRender.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/FASTRender/FASTRender.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Render/Objects" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/FASTRender/FASTRender.yy"
+[13-10-2020 16:40:23] Found Object: FASTRender
+[13-10-2020 16:40:23] Checking Draw_77.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking CleanUp_0.gml
+[13-10-2020 16:40:23] Checking Step_0.gml
+[13-10-2020 16:40:23] Checking oButton.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButton/oButton.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButton/oButton.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButton/oButton.yy"
+[13-10-2020 16:40:23] Found Object: oButton
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonLoadFrom/oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonLoadFrom/oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonLoadFrom/oButtonLoadFrom.yy"
+[13-10-2020 16:40:23] Found Object: oButtonLoadFrom
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking oButtonSaveTo.yy
+[13-10-2020 16:40:23] Redundant file: oButtonSaveTo.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking oButtonRun.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonRun/oButtonRun.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonRun/oButtonRun.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonRun/oButtonRun.yy"
+[13-10-2020 16:40:23] Found Object: oButtonRun
+[13-10-2020 16:40:23] Checking oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Redundant file: oButtonLoadFrom.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking oButtonSaveTo.yy
+[13-10-2020 16:40:23] Redundant file: oButtonSaveTo.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking oButtonSaveFormat.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveFormat/oButtonSaveFormat.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveFormat/oButtonSaveFormat.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveFormat/oButtonSaveFormat.yy"
+[13-10-2020 16:40:23] Found Object: oButtonSaveFormat
+[13-10-2020 16:40:23] Checking oButtonRun.yy
+[13-10-2020 16:40:23] Redundant file: oButtonRun.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Redundant file: oButtonLoadFrom.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Step_0.gml
+[13-10-2020 16:40:23] Checking oButtonSaveTo.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveTo/oButtonSaveTo.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveTo/oButtonSaveTo.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oButtonSaveTo/oButtonSaveTo.yy"
+[13-10-2020 16:40:23] Found Object: oButtonSaveTo
+[13-10-2020 16:40:23] Checking oButtonLoadFrom.yy
+[13-10-2020 16:40:23] Redundant file: oButtonLoadFrom.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking oConsole.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oConsole/oConsole.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oConsole/oConsole.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Console" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oConsole/oConsole.yy"
+[13-10-2020 16:40:23] Found Object: oConsole
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking Other_3.gml
+[13-10-2020 16:40:23] Checking oGenerator.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator/oGenerator.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator/oGenerator.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator/oGenerator.yy"
+[13-10-2020 16:40:23] Found Object: oGenerator
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Step_0.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking Other_3.gml
+[13-10-2020 16:40:23] Checking Other_25.gml
+[13-10-2020 16:40:23] Checking Other_13.gml
+[13-10-2020 16:40:23] Checking Other_12.gml
+[13-10-2020 16:40:23] Checking Other_11.gml
+[13-10-2020 16:40:23] Checking Other_10.gml
+[13-10-2020 16:40:23] Checking oGenerator5.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator5/oGenerator5.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator5/oGenerator5.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oGenerator5/oGenerator5.yy"
+[13-10-2020 16:40:23] Found Object: oGenerator5
+[13-10-2020 16:40:23] Checking oGenerator.yy
+[13-10-2020 16:40:23] Redundant file: oGenerator.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking oLoading.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oLoading/oLoading.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oLoading/oLoading.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Loading" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oLoading/oLoading.yy"
+[13-10-2020 16:40:23] Found Object: oLoading
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Other_5.gml
+[13-10-2020 16:40:23] Checking oRenderStack.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oRenderStack/oRenderStack.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oRenderStack/oRenderStack.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Render/Objects" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oRenderStack/oRenderStack.yy"
+[13-10-2020 16:40:23] Found Object: oRenderStack
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking CleanUp_0.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking oStatusbar.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oStatusbar/oStatusbar.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oStatusbar/oStatusbar.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Status" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oStatusbar/oStatusbar.yy"
+[13-10-2020 16:40:23] Found Object: oStatusbar
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking Step_0.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking oTextbox.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oTextbox/oTextbox.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oTextbox/oTextbox.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Textbox" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/oTextbox/oTextbox.yy"
+[13-10-2020 16:40:23] Found Object: oTextbox
+[13-10-2020 16:40:23] Checking Draw_0.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking __FASTtool.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/__FASTtool/__FASTtool.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/__FASTtool/__FASTtool.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Objects" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/objects/__FASTtool/__FASTtool.yy"
+[13-10-2020 16:40:23] Found Object: __FASTtool
+[13-10-2020 16:40:23] Checking Step_2.gml
+[13-10-2020 16:40:23] Checking Step_1.gml
+[13-10-2020 16:40:23] Checking Step_0.gml
+[13-10-2020 16:40:23] Checking Other_75.gml
+[13-10-2020 16:40:23] Checking Other_5.gml
+[13-10-2020 16:40:23] Checking Other_4.gml
+[13-10-2020 16:40:23] Checking Other_3.gml
+[13-10-2020 16:40:23] Checking Create_0.gml
+[13-10-2020 16:40:23] Checking windows
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/windows
+[13-10-2020 16:40:23] Checking main
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/main
+[13-10-2020 16:40:23] Checking mac
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/mac
+[13-10-2020 16:40:23] Checking linux
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/linux
+[13-10-2020 16:40:23] Checking html5
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/html5
+[13-10-2020 16:40:23] Checking options_html5.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/html5/options_html5.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/html5/options_html5.yy
+[13-10-2020 16:40:23] Option: [object Object]
+[13-10-2020 16:40:23] Checking options_linux.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/linux/options_linux.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/linux/options_linux.yy
+[13-10-2020 16:40:23] Option: [object Object]
+[13-10-2020 16:40:23] Checking options_mac.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/mac/options_mac.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/mac/options_mac.yy
+[13-10-2020 16:40:23] Option: [object Object]
+[13-10-2020 16:40:23] Checking options_main.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/main/options_main.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/main/options_main.yy
+[13-10-2020 16:40:23] Option: [object Object]
+[13-10-2020 16:40:23] Checking options_windows.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/windows/options_windows.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/options/windows/options_windows.yy
+[13-10-2020 16:40:23] Option: [object Object]
+[13-10-2020 16:40:23] Checking Room1
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/rooms/Room1
+[13-10-2020 16:40:23] Checking Room1.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/rooms/Room1/Room1.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/rooms/Room1/Room1.yy
+[13-10-2020 16:40:23] ROOT found, not added.
+[13-10-2020 16:40:23] Par: "folders" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/rooms/Room1/Room1.yy"
+[13-10-2020 16:40:23] Found Room: Room1
+[13-10-2020 16:40:23] Checking Vec2
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Vec2
+[13-10-2020 16:40:23] Checking variable_traverse_string
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/variable_traverse_string
+[13-10-2020 16:40:23] Checking Timer
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Timer
+[13-10-2020 16:40:23] Checking SystemOutput
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/SystemOutput
+[13-10-2020 16:40:23] Checking Surface
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Surface
+[13-10-2020 16:40:23] Checking string_trim
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_trim
+[13-10-2020 16:40:23] Checking string_to_real
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_to_real
+[13-10-2020 16:40:23] Checking string_justify
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_justify
+[13-10-2020 16:40:23] Checking string_find_first
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_find_first
+[13-10-2020 16:40:23] Checking string_explode_reverse
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode_reverse
+[13-10-2020 16:40:23] Checking string_explode
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode
+[13-10-2020 16:40:23] Checking string_con
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_con
+[13-10-2020 16:40:23] Checking StringTime
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringTime
+[13-10-2020 16:40:23] Checking StringNumber
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringNumber
+[13-10-2020 16:40:23] Checking StringFormatter
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringFormatter
+[13-10-2020 16:40:23] Checking String
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/String
+[13-10-2020 16:40:23] Checking ShapeRectangle
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeRectangle
+[13-10-2020 16:40:23] Checking ShapePolygon
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapePolygon
+[13-10-2020 16:40:23] Checking ShapeGrid
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeGrid
+[13-10-2020 16:40:23] Checking ShapeEllipses
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeEllipses
+[13-10-2020 16:40:23] Checking ShapeCircle
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeCircle
+[13-10-2020 16:40:23] Checking Shape
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Shape
+[13-10-2020 16:40:23] Checking script_file_load
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_file_load
+[13-10-2020 16:40:23] Checking script_evaluate_traverse_set
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse_set
+[13-10-2020 16:40:23] Checking script_evaluate_traverse
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse
+[13-10-2020 16:40:23] Checking script_evaluate_expression
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_expression
+[13-10-2020 16:40:23] Checking ScriptStatement
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptStatement
+[13-10-2020 16:40:23] Checking ScriptParser
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptParser
+[13-10-2020 16:40:23] Checking ScriptManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptManager
+[13-10-2020 16:40:23] Checking ScriptExpressionValues
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpressionValues
+[13-10-2020 16:40:23] Checking ScriptExpression
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpression
+[13-10-2020 16:40:23] Checking ScriptEngine
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptEngine
+[13-10-2020 16:40:23] Checking Script
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Script
+[13-10-2020 16:40:23] Checking RenderManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/RenderManager
+[13-10-2020 16:40:23] Checking publisher_unsubscribe
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_unsubscribe
+[13-10-2020 16:40:23] Checking publisher_subscribe
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_subscribe
+[13-10-2020 16:40:23] Checking publisher_broadcast
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_broadcast
+[13-10-2020 16:40:23] Checking PublisherManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherManager
+[13-10-2020 16:40:23] Checking PublisherChannel
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherChannel
+[13-10-2020 16:40:23] Checking Publisher
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Publisher
+[13-10-2020 16:40:23] Checking PointerManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerManager
+[13-10-2020 16:40:23] Checking PointerInterface
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerInterface
+[13-10-2020 16:40:23] Checking PointerDevice
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerDevice
+[13-10-2020 16:40:23] Checking Parser
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Parser
+[13-10-2020 16:40:23] Checking Pair
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Pair
+[13-10-2020 16:40:23] Checking MouseWheel
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseWheel
+[13-10-2020 16:40:23] Checking MouseButton
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseButton
+[13-10-2020 16:40:23] Checking log_notify
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_notify
+[13-10-2020 16:40:23] Checking log_nonfatal
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_nonfatal
+[13-10-2020 16:40:23] Checking log_debug
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_debug
+[13-10-2020 16:40:23] Checking log_critical
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_critical
+[13-10-2020 16:40:23] Checking LogManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/LogManager
+[13-10-2020 16:40:23] Checking Logger
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Logger
+[13-10-2020 16:40:23] Checking KeyboardKey
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/KeyboardKey
+[13-10-2020 16:40:23] Checking int_wrap
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/int_wrap
+[13-10-2020 16:40:23] Checking Interface
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Interface
+[13-10-2020 16:40:23] Checking InputDevice
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/InputDevice
+[13-10-2020 16:40:23] Checking include
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/include
+[13-10-2020 16:40:23] Checking GenericOutput
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericOutput
+[13-10-2020 16:40:23] Checking GenericInput
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericInput
+[13-10-2020 16:40:23] Checking GamepadXbox
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadXbox
+[13-10-2020 16:40:23] Checking GamepadPlaystation
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadPlaystation
+[13-10-2020 16:40:23] Checking GamepadManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadManager
+[13-10-2020 16:40:23] Checking Gamepad
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Gamepad
+[13-10-2020 16:40:23] Checking file_get_directory
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/file_get_directory
+[13-10-2020 16:40:23] Checking FileText
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileText
+[13-10-2020 16:40:23] Checking FileManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileManager
+[13-10-2020 16:40:23] Checking FileFAST
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileFAST
+[13-10-2020 16:40:23] Checking FileBinary
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileBinary
+[13-10-2020 16:40:23] Checking File
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/File
+[13-10-2020 16:40:23] Checking Feature
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Feature
+[13-10-2020 16:40:23] Checking FAST_macros
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_macros
+[13-10-2020 16:40:23] Checking FAST_features
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_features
+[13-10-2020 16:40:23] Checking FAST_Event
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_Event
+[13-10-2020 16:40:23] Checking FASTManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FASTManager
+[13-10-2020 16:40:23] Checking event_create
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/event_create
+[13-10-2020 16:40:23] Checking ds_tree_dump
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ds_tree_dump
+[13-10-2020 16:40:23] Checking DsWalkable
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsWalkable
+[13-10-2020 16:40:23] Checking DsTree_Value
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Value
+[13-10-2020 16:40:23] Checking DsTree_Struct
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Struct
+[13-10-2020 16:40:23] Checking DsTree_String
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_String
+[13-10-2020 16:40:23] Checking DsTree_Number
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Number
+[13-10-2020 16:40:23] Checking DsTree_Link
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Link
+[13-10-2020 16:40:23] Checking DsTree_Branch
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Branch
+[13-10-2020 16:40:23] Checking DsTree_Array
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Array
+[13-10-2020 16:40:23] Checking DsTree
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree
+[13-10-2020 16:40:23] Checking DsTable
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTable
+[13-10-2020 16:40:23] Checking DsStack
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsStack
+[13-10-2020 16:40:23] Checking DsQueue
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsQueue
+[13-10-2020 16:40:23] Checking DsMap
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsMap
+[13-10-2020 16:40:23] Checking DsList
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsList
+[13-10-2020 16:40:23] Checking DsLinkedList
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsLinkedList
+[13-10-2020 16:40:23] Checking DsChain
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsChain
+[13-10-2020 16:40:23] Checking database_load
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/database_load
+[13-10-2020 16:40:23] Checking DatabaseManager
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DatabaseManager
+[13-10-2020 16:40:23] Checking ComboInput
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ComboInput
+[13-10-2020 16:40:23] Checking array_unique
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_unique
+[13-10-2020 16:40:23] Checking array_union
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_union
+[13-10-2020 16:40:23] Checking array_to_string
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_to_string
+[13-10-2020 16:40:23] Checking array_quicksort
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_quicksort
+[13-10-2020 16:40:23] Checking array_difference
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_difference
+[13-10-2020 16:40:23] Checking array_contains
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_contains
+[13-10-2020 16:40:23] Checking array_concat
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_concat
+[13-10-2020 16:40:23] Checking ArrayString
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayString
+[13-10-2020 16:40:23] Checking ArrayNumber
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayNumber
+[13-10-2020 16:40:23] Checking ArrayList
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayList
+[13-10-2020 16:40:23] Checking Array
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Array
+[13-10-2020 16:40:23] Checking Array.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Array/Array.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Array/Array.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/Array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Array/Array.yy"
+[13-10-2020 16:40:23] Found Script: Array
+[13-10-2020 16:40:23] Checking Array.gml
+[13-10-2020 16:40:23] Checking ArrayList.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayList/ArrayList.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayList/ArrayList.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/Array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayList/ArrayList.yy"
+[13-10-2020 16:40:23] Found Script: ArrayList
+[13-10-2020 16:40:23] Checking ArrayList.gml
+[13-10-2020 16:40:23] Checking ArrayNumber.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayNumber/ArrayNumber.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayNumber/ArrayNumber.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/Array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayNumber/ArrayNumber.yy"
+[13-10-2020 16:40:23] Found Script: ArrayNumber
+[13-10-2020 16:40:23] Checking ArrayNumber.gml
+[13-10-2020 16:40:23] Checking ArrayString.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayString/ArrayString.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayString/ArrayString.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/Array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ArrayString/ArrayString.yy"
+[13-10-2020 16:40:23] Found Script: ArrayString
+[13-10-2020 16:40:23] Checking ArrayString.gml
+[13-10-2020 16:40:23] Checking array_concat.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_concat/array_concat.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_concat/array_concat.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_concat/array_concat.yy"
+[13-10-2020 16:40:23] Found Script: array_concat
+[13-10-2020 16:40:23] Checking array_concat.gml
+[13-10-2020 16:40:23] Checking array_contains.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_contains/array_contains.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_contains/array_contains.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_contains/array_contains.yy"
+[13-10-2020 16:40:23] Found Script: array_contains
+[13-10-2020 16:40:23] Checking array_contains.gml
+[13-10-2020 16:40:23] Checking array_difference.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_difference/array_difference.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_difference/array_difference.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_difference/array_difference.yy"
+[13-10-2020 16:40:23] Found Script: array_difference
+[13-10-2020 16:40:23] Checking array_difference.gml
+[13-10-2020 16:40:23] Checking array_quicksort.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_quicksort/array_quicksort.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_quicksort/array_quicksort.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_quicksort/array_quicksort.yy"
+[13-10-2020 16:40:23] Found Script: array_quicksort
+[13-10-2020 16:40:23] Checking array_quicksort.gml
+[13-10-2020 16:40:23] Checking array_to_string.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_to_string/array_to_string.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_to_string/array_to_string.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_to_string/array_to_string.yy"
+[13-10-2020 16:40:23] Found Script: array_to_string
+[13-10-2020 16:40:23] Checking array_to_string.gml
+[13-10-2020 16:40:23] Checking array_union.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_union/array_union.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_union/array_union.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_union/array_union.yy"
+[13-10-2020 16:40:23] Found Script: array_union
+[13-10-2020 16:40:23] Checking array_union.gml
+[13-10-2020 16:40:23] Checking array_unique.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_unique/array_unique.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_unique/array_unique.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/array" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/array_unique/array_unique.yy"
+[13-10-2020 16:40:23] Found Script: array_unique
+[13-10-2020 16:40:23] Checking array_unique.gml
+[13-10-2020 16:40:23] Checking ComboInput.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ComboInput/ComboInput.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ComboInput/ComboInput.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Special" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ComboInput/ComboInput.yy"
+[13-10-2020 16:40:23] Found Script: ComboInput
+[13-10-2020 16:40:23] Checking ComboInput.gml
+[13-10-2020 16:40:23] Checking DatabaseManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DatabaseManager/DatabaseManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DatabaseManager/DatabaseManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Database" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DatabaseManager/DatabaseManager.yy"
+[13-10-2020 16:40:23] Found Script: DatabaseManager
+[13-10-2020 16:40:23] Checking DatabaseManager.gml
+[13-10-2020 16:40:23] Checking database_load.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/database_load/database_load.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/database_load/database_load.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Database/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/database_load/database_load.yy"
+[13-10-2020 16:40:23] Found Script: database_load
+[13-10-2020 16:40:23] Checking database_load.gml
+[13-10-2020 16:40:23] Checking DsChain.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsChain/DsChain.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsChain/DsChain.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsChain/DsChain.yy"
+[13-10-2020 16:40:23] Found Script: DsChain
+[13-10-2020 16:40:23] Checking DsChain.gml
+[13-10-2020 16:40:23] Checking DsLinkedList.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsLinkedList/DsLinkedList.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsLinkedList/DsLinkedList.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsLinkedList/DsLinkedList.yy"
+[13-10-2020 16:40:23] Found Script: DsLinkedList
+[13-10-2020 16:40:23] Checking DsLinkedList.gml
+[13-10-2020 16:40:23] Checking DsList.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsList/DsList.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsList/DsList.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsList/DsList.yy"
+[13-10-2020 16:40:23] Found Script: DsList
+[13-10-2020 16:40:23] Checking DsList.gml
+[13-10-2020 16:40:23] Checking DsMap.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsMap/DsMap.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsMap/DsMap.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsMap/DsMap.yy"
+[13-10-2020 16:40:23] Found Script: DsMap
+[13-10-2020 16:40:23] Checking DsMap.gml
+[13-10-2020 16:40:23] Checking DsQueue.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsQueue/DsQueue.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsQueue/DsQueue.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsQueue/DsQueue.yy"
+[13-10-2020 16:40:23] Found Script: DsQueue
+[13-10-2020 16:40:23] Checking DsQueue.gml
+[13-10-2020 16:40:23] Checking DsStack.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsStack/DsStack.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsStack/DsStack.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsStack/DsStack.yy"
+[13-10-2020 16:40:23] Found Script: DsStack
+[13-10-2020 16:40:23] Checking DsStack.gml
+[13-10-2020 16:40:23] Checking DsTable.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTable/DsTable.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTable/DsTable.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTable/DsTable.yy"
+[13-10-2020 16:40:23] Found Script: DsTable
+[13-10-2020 16:40:23] Checking DsTable.gml
+[13-10-2020 16:40:23] Checking DsTree.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree/DsTree.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree/DsTree.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree/DsTree.yy"
+[13-10-2020 16:40:23] Found Script: DsTree
+[13-10-2020 16:40:23] Checking DsTree.gml
+[13-10-2020 16:40:23] Checking DsTree_Array.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Array/DsTree_Array.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Array/DsTree_Array.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Array/DsTree_Array.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Array
+[13-10-2020 16:40:23] Checking DsTree_Array.gml
+[13-10-2020 16:40:23] Checking DsTree_Branch.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Branch/DsTree_Branch.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Branch/DsTree_Branch.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Branch/DsTree_Branch.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Branch
+[13-10-2020 16:40:23] Checking DsTree_Branch.gml
+[13-10-2020 16:40:23] Checking DsTree_Link.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Link/DsTree_Link.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Link/DsTree_Link.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Link/DsTree_Link.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Link
+[13-10-2020 16:40:23] Checking DsTree_Link.gml
+[13-10-2020 16:40:23] Checking DsTree_Number.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Number/DsTree_Number.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Number/DsTree_Number.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Number/DsTree_Number.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Number
+[13-10-2020 16:40:23] Checking DsTree_Number.gml
+[13-10-2020 16:40:23] Checking DsTree_String.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_String/DsTree_String.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_String/DsTree_String.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_String/DsTree_String.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_String
+[13-10-2020 16:40:23] Checking DsTree_String.gml
+[13-10-2020 16:40:23] Checking DsTree_Struct.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Struct/DsTree_Struct.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Struct/DsTree_Struct.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Struct/DsTree_Struct.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Struct
+[13-10-2020 16:40:23] Checking DsTree_Struct.gml
+[13-10-2020 16:40:23] Checking DsTree_Value.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Value/DsTree_Value.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Value/DsTree_Value.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsTree_Value/DsTree_Value.yy"
+[13-10-2020 16:40:23] Found Script: DsTree_Value
+[13-10-2020 16:40:23] Checking DsTree_Value.gml
+[13-10-2020 16:40:23] Checking DsWalkable.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsWalkable/DsWalkable.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsWalkable/DsWalkable.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/DsWalkable/DsWalkable.yy"
+[13-10-2020 16:40:23] Found Script: DsWalkable
+[13-10-2020 16:40:23] Checking DsWalkable.gml
+[13-10-2020 16:40:23] Checking ds_tree_dump.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ds_tree_dump/ds_tree_dump.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ds_tree_dump/ds_tree_dump.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Structures/DsTree/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ds_tree_dump/ds_tree_dump.yy"
+[13-10-2020 16:40:23] Found Script: ds_tree_dump
+[13-10-2020 16:40:23] Checking ds_tree_dump.gml
+[13-10-2020 16:40:23] Checking event_create.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/event_create/event_create.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/event_create/event_create.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Events/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/event_create/event_create.yy"
+[13-10-2020 16:40:23] Found Script: event_create
+[13-10-2020 16:40:23] Checking event_create.gml
+[13-10-2020 16:40:23] Checking FASTManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FASTManager/FASTManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FASTManager/FASTManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FASTManager/FASTManager.yy"
+[13-10-2020 16:40:23] Found Script: FASTManager
+[13-10-2020 16:40:23] Checking FASTManager.gml
+[13-10-2020 16:40:23] Checking FAST_Event.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_Event/FAST_Event.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_Event/FAST_Event.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Events/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_Event/FAST_Event.yy"
+[13-10-2020 16:40:23] Found Script: FAST_Event
+[13-10-2020 16:40:23] Checking FAST_Event.gml
+[13-10-2020 16:40:23] Checking FAST_features.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_features/FAST_features.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_features/FAST_features.yy
+[13-10-2020 16:40:23] Par: "folders/FAST" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_features/FAST_features.yy"
+[13-10-2020 16:40:23] Found Script: FAST_features
+[13-10-2020 16:40:23] Checking FAST_features.gml
+[13-10-2020 16:40:23] Checking FAST_macros.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_macros/FAST_macros.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_macros/FAST_macros.yy
+[13-10-2020 16:40:23] Par: "folders/FAST" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FAST_macros/FAST_macros.yy"
+[13-10-2020 16:40:23] Found Script: FAST_macros
+[13-10-2020 16:40:23] Checking FAST_macros.gml
+[13-10-2020 16:40:23] Checking Feature.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Feature/Feature.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Feature/Feature.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Scripts" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Feature/Feature.yy"
+[13-10-2020 16:40:23] Found Script: Feature
+[13-10-2020 16:40:23] Checking Feature.gml
+[13-10-2020 16:40:23] Checking File.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/File/File.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/File/File.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/File Handling/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/File/File.yy"
+[13-10-2020 16:40:23] Found Script: File
+[13-10-2020 16:40:23] Checking File.gml
+[13-10-2020 16:40:23] Checking FileBinary.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileBinary/FileBinary.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileBinary/FileBinary.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/File Handling/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileBinary/FileBinary.yy"
+[13-10-2020 16:40:23] Found Script: FileBinary
+[13-10-2020 16:40:23] Checking FileBinary.gml
+[13-10-2020 16:40:23] Checking FileFAST.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileFAST/FileFAST.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileFAST/FileFAST.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Database/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileFAST/FileFAST.yy"
+[13-10-2020 16:40:23] Found Script: FileFAST
+[13-10-2020 16:40:23] Checking FileFAST.gml
+[13-10-2020 16:40:23] Checking FileManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileManager/FileManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileManager/FileManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/File Handling" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileManager/FileManager.yy"
+[13-10-2020 16:40:23] Found Script: FileManager
+[13-10-2020 16:40:23] Checking FileManager.gml
+[13-10-2020 16:40:23] Checking FileText.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileText/FileText.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileText/FileText.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/File Handling/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/FileText/FileText.yy"
+[13-10-2020 16:40:23] Found Script: FileText
+[13-10-2020 16:40:23] Checking FileText.gml
+[13-10-2020 16:40:23] Checking file_get_directory.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/file_get_directory/file_get_directory.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/file_get_directory/file_get_directory.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/file" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/file_get_directory/file_get_directory.yy"
+[13-10-2020 16:40:23] Found Script: file_get_directory
+[13-10-2020 16:40:23] Checking file_get_directory.gml
+[13-10-2020 16:40:23] Checking Gamepad.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Gamepad/Gamepad.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Gamepad/Gamepad.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Gamepad/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Gamepad/Gamepad.yy"
+[13-10-2020 16:40:23] Found Script: Gamepad
+[13-10-2020 16:40:23] Checking Gamepad.gml
+[13-10-2020 16:40:23] Checking GamepadManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadManager/GamepadManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadManager/GamepadManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Gamepad" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadManager/GamepadManager.yy"
+[13-10-2020 16:40:23] Found Script: GamepadManager
+[13-10-2020 16:40:23] Checking GamepadManager.gml
+[13-10-2020 16:40:23] Checking GamepadPlaystation.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadPlaystation/GamepadPlaystation.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadPlaystation/GamepadPlaystation.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Gamepad/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadPlaystation/GamepadPlaystation.yy"
+[13-10-2020 16:40:23] Found Script: GamepadPlaystation
+[13-10-2020 16:40:23] Checking GamepadPlaystation.gml
+[13-10-2020 16:40:23] Checking GamepadXbox.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadXbox/GamepadXbox.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadXbox/GamepadXbox.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Gamepad/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GamepadXbox/GamepadXbox.yy"
+[13-10-2020 16:40:23] Found Script: GamepadXbox
+[13-10-2020 16:40:23] Checking GamepadXbox.gml
+[13-10-2020 16:40:23] Checking GenericInput.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericInput/GenericInput.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericInput/GenericInput.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericInput/GenericInput.yy"
+[13-10-2020 16:40:23] Found Script: GenericInput
+[13-10-2020 16:40:23] Checking GenericInput.gml
+[13-10-2020 16:40:23] Checking GenericOutput.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericOutput/GenericOutput.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericOutput/GenericOutput.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Scripts" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/GenericOutput/GenericOutput.yy"
+[13-10-2020 16:40:23] Found Script: GenericOutput
+[13-10-2020 16:40:23] Checking GenericOutput.gml
+[13-10-2020 16:40:23] Checking include.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/include/include.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/include/include.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/include" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/include/include.yy"
+[13-10-2020 16:40:23] Found Script: include
+[13-10-2020 16:40:23] Checking include.gml
+[13-10-2020 16:40:23] Checking InputDevice.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/InputDevice/InputDevice.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/InputDevice/InputDevice.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/InputDevice/InputDevice.yy"
+[13-10-2020 16:40:23] Found Script: InputDevice
+[13-10-2020 16:40:23] Checking InputDevice.gml
+[13-10-2020 16:40:23] Checking Interface.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Interface/Interface.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Interface/Interface.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Interface/Interface.yy"
+[13-10-2020 16:40:23] Found Script: Interface
+[13-10-2020 16:40:23] Checking Interface.gml
+[13-10-2020 16:40:23] Checking int_wrap.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/int_wrap/int_wrap.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/int_wrap/int_wrap.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/int" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/int_wrap/int_wrap.yy"
+[13-10-2020 16:40:23] Found Script: int_wrap
+[13-10-2020 16:40:23] Checking int_wrap.gml
+[13-10-2020 16:40:23] Checking KeyboardKey.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/KeyboardKey/KeyboardKey.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/KeyboardKey/KeyboardKey.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Keyboard" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/KeyboardKey/KeyboardKey.yy"
+[13-10-2020 16:40:23] Found Script: KeyboardKey
+[13-10-2020 16:40:23] Checking KeyboardKey.gml
+[13-10-2020 16:40:23] Checking Logger.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Logger/Logger.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Logger/Logger.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Logger/Logger.yy"
+[13-10-2020 16:40:23] Found Script: Logger
+[13-10-2020 16:40:23] Checking Logger.gml
+[13-10-2020 16:40:23] Checking LogManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/LogManager/LogManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/LogManager/LogManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/LogManager/LogManager.yy"
+[13-10-2020 16:40:23] Found Script: LogManager
+[13-10-2020 16:40:23] Checking LogManager.gml
+[13-10-2020 16:40:23] Checking log_critical.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_critical/log_critical.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_critical/log_critical.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_critical/log_critical.yy"
+[13-10-2020 16:40:23] Found Script: log_critical
+[13-10-2020 16:40:23] Checking log_critical.gml
+[13-10-2020 16:40:23] Checking log_debug.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_debug/log_debug.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_debug/log_debug.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_debug/log_debug.yy"
+[13-10-2020 16:40:23] Found Script: log_debug
+[13-10-2020 16:40:23] Checking log_debug.gml
+[13-10-2020 16:40:23] Checking log_nonfatal.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_nonfatal/log_nonfatal.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_nonfatal/log_nonfatal.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_nonfatal/log_nonfatal.yy"
+[13-10-2020 16:40:23] Found Script: log_nonfatal
+[13-10-2020 16:40:23] Checking log_nonfatal.gml
+[13-10-2020 16:40:23] Checking log_notify.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_notify/log_notify.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_notify/log_notify.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Logging/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/log_notify/log_notify.yy"
+[13-10-2020 16:40:23] Found Script: log_notify
+[13-10-2020 16:40:23] Checking log_notify.gml
+[13-10-2020 16:40:23] Checking MouseButton.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseButton/MouseButton.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseButton/MouseButton.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Mouse" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseButton/MouseButton.yy"
+[13-10-2020 16:40:23] Found Script: MouseButton
+[13-10-2020 16:40:23] Checking MouseButton.gml
+[13-10-2020 16:40:23] Checking MouseWheel.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseWheel/MouseWheel.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseWheel/MouseWheel.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Input Handling/Mouse" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/MouseWheel/MouseWheel.yy"
+[13-10-2020 16:40:23] Found Script: MouseWheel
+[13-10-2020 16:40:23] Checking MouseWheel.gml
+[13-10-2020 16:40:23] Checking Pair.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Pair/Pair.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Pair/Pair.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Pair/Pair.yy"
+[13-10-2020 16:40:23] Found Script: Pair
+[13-10-2020 16:40:23] Checking Pair.gml
+[13-10-2020 16:40:23] Checking Parser.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Parser/Parser.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Parser/Parser.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Parser" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Parser/Parser.yy"
+[13-10-2020 16:40:23] Found Script: Parser
+[13-10-2020 16:40:23] Checking Parser.gml
+[13-10-2020 16:40:23] Checking PointerDevice.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerDevice/PointerDevice.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerDevice/PointerDevice.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerDevice/PointerDevice.yy"
+[13-10-2020 16:40:23] Found Script: PointerDevice
+[13-10-2020 16:40:23] Checking PointerDevice.gml
+[13-10-2020 16:40:23] Checking PointerInterface.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerInterface/PointerInterface.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerInterface/PointerInterface.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerInterface/PointerInterface.yy"
+[13-10-2020 16:40:23] Found Script: PointerInterface
+[13-10-2020 16:40:23] Checking PointerInterface.gml
+[13-10-2020 16:40:23] Checking PointerManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerManager/PointerManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerManager/PointerManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PointerManager/PointerManager.yy"
+[13-10-2020 16:40:23] Found Script: PointerManager
+[13-10-2020 16:40:23] Checking PointerManager.gml
+[13-10-2020 16:40:23] Checking Publisher.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Publisher/Publisher.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Publisher/Publisher.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Publisher/Publisher.yy"
+[13-10-2020 16:40:23] Found Script: Publisher
+[13-10-2020 16:40:23] Checking Publisher.gml
+[13-10-2020 16:40:23] Checking PublisherChannel.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherChannel/PublisherChannel.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherChannel/PublisherChannel.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherChannel/PublisherChannel.yy"
+[13-10-2020 16:40:23] Found Script: PublisherChannel
+[13-10-2020 16:40:23] Checking PublisherChannel.gml
+[13-10-2020 16:40:23] Checking PublisherManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherManager/PublisherManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherManager/PublisherManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/PublisherManager/PublisherManager.yy"
+[13-10-2020 16:40:23] Found Script: PublisherManager
+[13-10-2020 16:40:23] Checking PublisherManager.gml
+[13-10-2020 16:40:23] Checking publisher_broadcast.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_broadcast/publisher_broadcast.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_broadcast/publisher_broadcast.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_broadcast/publisher_broadcast.yy"
+[13-10-2020 16:40:23] Found Script: publisher_broadcast
+[13-10-2020 16:40:23] Checking publisher_broadcast.gml
+[13-10-2020 16:40:23] Checking publisher_subscribe.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_subscribe/publisher_subscribe.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_subscribe/publisher_subscribe.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_subscribe/publisher_subscribe.yy"
+[13-10-2020 16:40:23] Found Script: publisher_subscribe
+[13-10-2020 16:40:23] Checking publisher_subscribe.gml
+[13-10-2020 16:40:23] Checking publisher_unsubscribe.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_unsubscribe/publisher_unsubscribe.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_unsubscribe/publisher_unsubscribe.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Publisher/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/publisher_unsubscribe/publisher_unsubscribe.yy"
+[13-10-2020 16:40:23] Found Script: publisher_unsubscribe
+[13-10-2020 16:40:23] Checking publisher_unsubscribe.gml
+[13-10-2020 16:40:23] Checking RenderManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/RenderManager/RenderManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/RenderManager/RenderManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Render" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/RenderManager/RenderManager.yy"
+[13-10-2020 16:40:23] Found Script: RenderManager
+[13-10-2020 16:40:23] Checking RenderManager.gml
+[13-10-2020 16:40:23] Checking Script.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Script/Script.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Script/Script.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Script/Script.yy"
+[13-10-2020 16:40:23] Found Script: Script
+[13-10-2020 16:40:23] Checking Script.gml
+[13-10-2020 16:40:23] Checking ScriptEngine.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptEngine/ScriptEngine.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptEngine/ScriptEngine.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptEngine/ScriptEngine.yy"
+[13-10-2020 16:40:23] Found Script: ScriptEngine
+[13-10-2020 16:40:23] Checking ScriptEngine.gml
+[13-10-2020 16:40:23] Checking ScriptExpression.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpression/ScriptExpression.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpression/ScriptExpression.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpression/ScriptExpression.yy"
+[13-10-2020 16:40:23] Found Script: ScriptExpression
+[13-10-2020 16:40:23] Checking ScriptExpression.gml
+[13-10-2020 16:40:23] Checking ScriptExpressionValues.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpressionValues/ScriptExpressionValues.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpressionValues/ScriptExpressionValues.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptExpressionValues/ScriptExpressionValues.yy"
+[13-10-2020 16:40:23] Found Script: ScriptExpressionValues
+[13-10-2020 16:40:23] Checking ScriptExpressionValues.gml
+[13-10-2020 16:40:23] Checking ScriptManager.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptManager/ScriptManager.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptManager/ScriptManager.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptManager/ScriptManager.yy"
+[13-10-2020 16:40:23] Found Script: ScriptManager
+[13-10-2020 16:40:23] Checking ScriptManager.gml
+[13-10-2020 16:40:23] Checking ScriptParser.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptParser/ScriptParser.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptParser/ScriptParser.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptParser/ScriptParser.yy"
+[13-10-2020 16:40:23] Found Script: ScriptParser
+[13-10-2020 16:40:23] Checking ScriptParser.gml
+[13-10-2020 16:40:23] Checking ScriptStatement.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptStatement/ScriptStatement.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptStatement/ScriptStatement.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Structs" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ScriptStatement/ScriptStatement.yy"
+[13-10-2020 16:40:23] Found Script: ScriptStatement
+[13-10-2020 16:40:23] Checking ScriptStatement.gml
+[13-10-2020 16:40:23] Checking script_evaluate_expression.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_expression/script_evaluate_expression.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_expression/script_evaluate_expression.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_expression/script_evaluate_expression.yy"
+[13-10-2020 16:40:23] Found Script: script_evaluate_expression
+[13-10-2020 16:40:23] Checking script_evaluate_expression.gml
+[13-10-2020 16:40:23] Checking script_evaluate_traverse.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse/script_evaluate_traverse.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse/script_evaluate_traverse.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse/script_evaluate_traverse.yy"
+[13-10-2020 16:40:23] Found Script: script_evaluate_traverse
+[13-10-2020 16:40:23] Checking script_evaluate_traverse.gml
+[13-10-2020 16:40:23] Checking script_evaluate_traverse_set.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse_set/script_evaluate_traverse_set.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse_set/script_evaluate_traverse_set.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_evaluate_traverse_set/script_evaluate_traverse_set.yy"
+[13-10-2020 16:40:23] Found Script: script_evaluate_traverse_set
+[13-10-2020 16:40:23] Checking script_evaluate_traverse_set.gml
+[13-10-2020 16:40:23] Checking script_file_load.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_file_load/script_file_load.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_file_load/script_file_load.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Scripting/Functions" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/script_file_load/script_file_load.yy"
+[13-10-2020 16:40:23] Found Script: script_file_load
+[13-10-2020 16:40:23] Checking script_file_load.gml
+[13-10-2020 16:40:23] Checking Shape.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Shape/Shape.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Shape/Shape.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Shape/Shape.yy"
+[13-10-2020 16:40:23] Found Script: Shape
+[13-10-2020 16:40:23] Checking Shape.gml
+[13-10-2020 16:40:23] Checking ShapeCircle.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeCircle/ShapeCircle.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeCircle/ShapeCircle.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeCircle/ShapeCircle.yy"
+[13-10-2020 16:40:23] Found Script: ShapeCircle
+[13-10-2020 16:40:23] Checking ShapeCircle.gml
+[13-10-2020 16:40:23] Checking ShapeEllipses.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeEllipses/ShapeEllipses.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeEllipses/ShapeEllipses.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeEllipses/ShapeEllipses.yy"
+[13-10-2020 16:40:23] Found Script: ShapeEllipses
+[13-10-2020 16:40:23] Checking ShapeEllipses.gml
+[13-10-2020 16:40:23] Checking ShapeGrid.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeGrid/ShapeGrid.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeGrid/ShapeGrid.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeGrid/ShapeGrid.yy"
+[13-10-2020 16:40:23] Found Script: ShapeGrid
+[13-10-2020 16:40:23] Checking ShapeGrid.gml
+[13-10-2020 16:40:23] Checking ShapePolygon.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapePolygon/ShapePolygon.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapePolygon/ShapePolygon.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapePolygon/ShapePolygon.yy"
+[13-10-2020 16:40:23] Found Script: ShapePolygon
+[13-10-2020 16:40:23] Checking ShapePolygon.gml
+[13-10-2020 16:40:23] Checking ShapeRectangle.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeRectangle/ShapeRectangle.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeRectangle/ShapeRectangle.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Pointer/Shapes" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/ShapeRectangle/ShapeRectangle.yy"
+[13-10-2020 16:40:23] Found Script: ShapeRectangle
+[13-10-2020 16:40:23] Checking ShapeRectangle.gml
+[13-10-2020 16:40:23] Checking String.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/String/String.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/String/String.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types/String" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/String/String.yy"
+[13-10-2020 16:40:23] Found Script: String
+[13-10-2020 16:40:23] Checking String.gml
+[13-10-2020 16:40:23] Checking StringFormatter.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringFormatter/StringFormatter.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringFormatter/StringFormatter.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Parser" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringFormatter/StringFormatter.yy"
+[13-10-2020 16:40:23] Found Script: StringFormatter
+[13-10-2020 16:40:23] Checking StringFormatter.gml
+[13-10-2020 16:40:23] Checking StringNumber.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringNumber/StringNumber.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringNumber/StringNumber.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types/String" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringNumber/StringNumber.yy"
+[13-10-2020 16:40:23] Found Script: StringNumber
+[13-10-2020 16:40:23] Checking StringNumber.gml
+[13-10-2020 16:40:23] Checking StringTime.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringTime/StringTime.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringTime/StringTime.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types/String" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/StringTime/StringTime.yy"
+[13-10-2020 16:40:23] Found Script: StringTime
+[13-10-2020 16:40:23] Checking StringTime.gml
+[13-10-2020 16:40:23] Checking string_con.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_con/string_con.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_con/string_con.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_con/string_con.yy"
+[13-10-2020 16:40:23] Found Script: string_con
+[13-10-2020 16:40:23] Checking string_con.gml
+[13-10-2020 16:40:23] Checking string_explode.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode/string_explode.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode/string_explode.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode/string_explode.yy"
+[13-10-2020 16:40:23] Found Script: string_explode
+[13-10-2020 16:40:23] Checking string_explode.gml
+[13-10-2020 16:40:23] Checking string_explode_reverse.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode_reverse/string_explode_reverse.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode_reverse/string_explode_reverse.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_explode_reverse/string_explode_reverse.yy"
+[13-10-2020 16:40:23] Found Script: string_explode_reverse
+[13-10-2020 16:40:23] Checking string_explode_reverse.gml
+[13-10-2020 16:40:23] Checking string_find_first.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_find_first/string_find_first.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_find_first/string_find_first.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_find_first/string_find_first.yy"
+[13-10-2020 16:40:23] Found Script: string_find_first
+[13-10-2020 16:40:23] Checking string_find_first.gml
+[13-10-2020 16:40:23] Checking string_justify.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_justify/string_justify.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_justify/string_justify.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_justify/string_justify.yy"
+[13-10-2020 16:40:23] Found Script: string_justify
+[13-10-2020 16:40:23] Checking string_justify.gml
+[13-10-2020 16:40:23] Checking string_to_real.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_to_real/string_to_real.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_to_real/string_to_real.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_to_real/string_to_real.yy"
+[13-10-2020 16:40:23] Found Script: string_to_real
+[13-10-2020 16:40:23] Checking string_to_real.gml
+[13-10-2020 16:40:23] Checking string_trim.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_trim/string_trim.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_trim/string_trim.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/string" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/string_trim/string_trim.yy"
+[13-10-2020 16:40:23] Found Script: string_trim
+[13-10-2020 16:40:23] Checking string_trim.gml
+[13-10-2020 16:40:23] Checking Surface.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Surface/Surface.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Surface/Surface.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Surface/Surface.yy"
+[13-10-2020 16:40:23] Found Script: Surface
+[13-10-2020 16:40:23] Checking Surface.gml
+[13-10-2020 16:40:23] Checking SystemOutput.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/SystemOutput/SystemOutput.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/SystemOutput/SystemOutput.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Scripts" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/SystemOutput/SystemOutput.yy"
+[13-10-2020 16:40:23] Found Script: SystemOutput
+[13-10-2020 16:40:23] Checking SystemOutput.gml
+[13-10-2020 16:40:23] Checking Timer.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Timer/Timer.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Timer/Timer.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Timer/Timer.yy"
+[13-10-2020 16:40:23] Found Script: Timer
+[13-10-2020 16:40:23] Checking Timer.gml
+[13-10-2020 16:40:23] Checking variable_traverse_string.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/variable_traverse_string/variable_traverse_string.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/variable_traverse_string/variable_traverse_string.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Functions/variable" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/variable_traverse_string/variable_traverse_string.yy"
+[13-10-2020 16:40:23] Found Script: variable_traverse_string
+[13-10-2020 16:40:23] Checking variable_traverse_string.gml
+[13-10-2020 16:40:23] Checking Vec2.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Vec2/Vec2.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Vec2/Vec2.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/Data Types" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/scripts/Vec2/Vec2.yy"
+[13-10-2020 16:40:23] Found Script: Vec2
+[13-10-2020 16:40:23] Checking Vec2.gml
+[13-10-2020 16:40:23] Checking gfx_textbox
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox
+[13-10-2020 16:40:23] Checking gfx_sys_terminal0
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0
+[13-10-2020 16:40:23] Checking gfx_sys_disk0
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0
+[13-10-2020 16:40:23] Checking gfx_statusbar
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar
+[13-10-2020 16:40:23] Checking gfx_JSDTM
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM
+[13-10-2020 16:40:23] Checking gfx_icons
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons
+[13-10-2020 16:40:23] Checking gfx_button
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button
+[13-10-2020 16:40:23] Checking gfx_boundaries
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries/layers
+[13-10-2020 16:40:23] Checking gfx_boundaries.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries/gfx_boundaries.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries/gfx_boundaries.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries/gfx_boundaries.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_boundaries
+[13-10-2020 16:40:23] Checking ec74d660-880d-4e34-901e-6a8dddd5691b.png
+[13-10-2020 16:40:23] Checking ec74d660-880d-4e34-901e-6a8dddd5691b
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_boundaries/layers/ec74d660-880d-4e34-901e-6a8dddd5691b
+[13-10-2020 16:40:23] Checking f282cd28-81a3-4774-98c4-a4e5c9f43765.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/layers
+[13-10-2020 16:40:23] Checking gfx_button.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/gfx_button.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/gfx_button.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/gfx_button.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_button
+[13-10-2020 16:40:23] Checking 946a4c46-24e7-4cc4-bda9-c770eb8ed894.png
+[13-10-2020 16:40:23] Checking 4660ee80-7c91-4783-89a7-81225a66f3ae.png
+[13-10-2020 16:40:23] Checking 1bc12dfc-2b7a-4e54-807d-b553b06fdcd8.png
+[13-10-2020 16:40:23] Checking 0c0adffc-c25b-4988-a6ba-949414757a80.png
+[13-10-2020 16:40:23] Checking 946a4c46-24e7-4cc4-bda9-c770eb8ed894
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/layers/946a4c46-24e7-4cc4-bda9-c770eb8ed894
+[13-10-2020 16:40:23] Checking 4660ee80-7c91-4783-89a7-81225a66f3ae
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/layers/4660ee80-7c91-4783-89a7-81225a66f3ae
+[13-10-2020 16:40:23] Checking 1bc12dfc-2b7a-4e54-807d-b553b06fdcd8
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/layers/1bc12dfc-2b7a-4e54-807d-b553b06fdcd8
+[13-10-2020 16:40:23] Checking 0c0adffc-c25b-4988-a6ba-949414757a80
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_button/layers/0c0adffc-c25b-4988-a6ba-949414757a80
+[13-10-2020 16:40:23] Checking 1681906d-02df-42fe-abbc-93e7664045e9.png
+[13-10-2020 16:40:23] Checking 1681906d-02df-42fe-abbc-93e7664045e9.png
+[13-10-2020 16:40:23] Checking 1681906d-02df-42fe-abbc-93e7664045e9.png
+[13-10-2020 16:40:23] Checking 1681906d-02df-42fe-abbc-93e7664045e9.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers
+[13-10-2020 16:40:23] Checking gfx_icons.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/gfx_icons.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/gfx_icons.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Buttons" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/gfx_icons.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_icons
+[13-10-2020 16:40:23] Checking f369ef86-4c1a-4aec-becb-21766cbedd5e.png
+[13-10-2020 16:40:23] Checking 41a42660-c902-4227-bb28-6819f0b0cbd7.png
+[13-10-2020 16:40:23] Checking 1f4bf7ed-c892-4c74-a507-55f69691c8c3.png
+[13-10-2020 16:40:23] Checking 18aa9747-86db-492d-99a5-85a9c70363b9.png
+[13-10-2020 16:40:23] Checking 055f6284-cbfa-4016-8bf0-47126b98f9ff.png
+[13-10-2020 16:40:23] Checking f369ef86-4c1a-4aec-becb-21766cbedd5e
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers/f369ef86-4c1a-4aec-becb-21766cbedd5e
+[13-10-2020 16:40:23] Checking 41a42660-c902-4227-bb28-6819f0b0cbd7
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers/41a42660-c902-4227-bb28-6819f0b0cbd7
+[13-10-2020 16:40:23] Checking 1f4bf7ed-c892-4c74-a507-55f69691c8c3
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers/1f4bf7ed-c892-4c74-a507-55f69691c8c3
+[13-10-2020 16:40:23] Checking 18aa9747-86db-492d-99a5-85a9c70363b9
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers/18aa9747-86db-492d-99a5-85a9c70363b9
+[13-10-2020 16:40:23] Checking 055f6284-cbfa-4016-8bf0-47126b98f9ff
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_icons/layers/055f6284-cbfa-4016-8bf0-47126b98f9ff
+[13-10-2020 16:40:23] Checking 002672e4-1a09-41d9-85e6-bcce41d7ed61.png
+[13-10-2020 16:40:23] Checking 002672e4-1a09-41d9-85e6-bcce41d7ed61.png
+[13-10-2020 16:40:23] Checking 002672e4-1a09-41d9-85e6-bcce41d7ed61.png
+[13-10-2020 16:40:23] Checking 002672e4-1a09-41d9-85e6-bcce41d7ed61.png
+[13-10-2020 16:40:23] Checking 002672e4-1a09-41d9-85e6-bcce41d7ed61.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM/layers
+[13-10-2020 16:40:23] Checking gfx_JSDTM.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM/gfx_JSDTM.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM/gfx_JSDTM.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM/gfx_JSDTM.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_JSDTM
+[13-10-2020 16:40:23] Checking a1e2d965-0fba-4e82-807a-f785374222c4.png
+[13-10-2020 16:40:23] Checking a1e2d965-0fba-4e82-807a-f785374222c4
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_JSDTM/layers/a1e2d965-0fba-4e82-807a-f785374222c4
+[13-10-2020 16:40:23] Checking 306c6b0e-76f3-41d9-a651-94076d2755d5.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar/layers
+[13-10-2020 16:40:23] Checking gfx_statusbar.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar/gfx_statusbar.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar/gfx_statusbar.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Status" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar/gfx_statusbar.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_statusbar
+[13-10-2020 16:40:23] Checking 0007c2b0-38ae-40ea-b91d-367892082ad9.png
+[13-10-2020 16:40:23] Checking 0007c2b0-38ae-40ea-b91d-367892082ad9
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_statusbar/layers/0007c2b0-38ae-40ea-b91d-367892082ad9
+[13-10-2020 16:40:23] Checking ab8b5cbd-7e19-4aed-b232-7cf87e20ef20.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0/layers
+[13-10-2020 16:40:23] Checking gfx_sys_disk0.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0/gfx_sys_disk0.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0/gfx_sys_disk0.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Sprites" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0/gfx_sys_disk0.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_sys_disk0
+[13-10-2020 16:40:23] Checking 2f520ccd-8261-4860-9598-3ead5ad7139d.png
+[13-10-2020 16:40:23] Checking 2f520ccd-8261-4860-9598-3ead5ad7139d
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_disk0/layers/2f520ccd-8261-4860-9598-3ead5ad7139d
+[13-10-2020 16:40:23] Checking 701ca58a-383c-446a-a879-af66dbb6e98b.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0/layers
+[13-10-2020 16:40:23] Checking gfx_sys_terminal0.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0/gfx_sys_terminal0.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0/gfx_sys_terminal0.yy
+[13-10-2020 16:40:23] Par: "folders/FAST/Core/System/Sprites" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0/gfx_sys_terminal0.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_sys_terminal0
+[13-10-2020 16:40:23] Checking da4324ac-b595-4b99-9d35-74aef1bdcc51.png
+[13-10-2020 16:40:23] Checking da4324ac-b595-4b99-9d35-74aef1bdcc51
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_sys_terminal0/layers/da4324ac-b595-4b99-9d35-74aef1bdcc51
+[13-10-2020 16:40:23] Checking becb23a5-576e-4334-8795-d6e7826f17ed.png
+[13-10-2020 16:40:23] Checking layers
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/layers
+[13-10-2020 16:40:23] Checking gfx_textbox.yy
+[13-10-2020 16:40:23] Parsing C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/gfx_textbox.yy
+[13-10-2020 16:40:23] Reading C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/gfx_textbox.yy
+[13-10-2020 16:40:23] Par: "folders/JSDocToMarkdown/Textbox" at dir: "C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/gfx_textbox.yy"
+[13-10-2020 16:40:23] Found Sprite: gfx_textbox
+[13-10-2020 16:40:23] Checking gfx_boundaries.yy
+[13-10-2020 16:40:23] Redundant file: gfx_boundaries.yy, will be moved to ___redundant
+[13-10-2020 16:40:23] Checking f70ccc02-852d-41cd-8604-87d88ed2f522.png
+[13-10-2020 16:40:23] Checking ec74d660-880d-4e34-901e-6a8dddd5691b.png
+[13-10-2020 16:40:23] Checking af3fc0ac-ee0f-441f-8e5a-31eb064cd947.png
+[13-10-2020 16:40:23] Checking 25f72794-9c00-4b3d-8aca-f4c6217f8cec.png
+[13-10-2020 16:40:23] Checking f70ccc02-852d-41cd-8604-87d88ed2f522
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/layers/f70ccc02-852d-41cd-8604-87d88ed2f522
+[13-10-2020 16:40:23] Checking ec74d660-880d-4e34-901e-6a8dddd5691b
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/layers/ec74d660-880d-4e34-901e-6a8dddd5691b
+[13-10-2020 16:40:23] Checking af3fc0ac-ee0f-441f-8e5a-31eb064cd947
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/layers/af3fc0ac-ee0f-441f-8e5a-31eb064cd947
+[13-10-2020 16:40:23] Checking 25f72794-9c00-4b3d-8aca-f4c6217f8cec
+[13-10-2020 16:40:23] Directory: C:/Users/drago/Documents/GameMakerStudio2/JSDocToMarkdown/sprites/gfx_textbox/layers/25f72794-9c00-4b3d-8aca-f4c6217f8cec
+[13-10-2020 16:40:23] Checking f282cd28-81a3-4774-98c4-a4e5c9f43765.png
+[13-10-2020 16:40:23] Checking f282cd28-81a3-4774-98c4-a4e5c9f43765.png
+[13-10-2020 16:40:23] Checking f282cd28-81a3-4774-98c4-a4e5c9f43765.png
+[13-10-2020 16:40:23] Checking f282cd28-81a3-4774-98c4-a4e5c9f43765.png
+[13-10-2020 16:40:23] FINISHED!
