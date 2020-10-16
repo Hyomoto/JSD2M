@@ -46,7 +46,7 @@ function File( _readonly ) : GenericOutput() constructor {
 		if ( writable == false ) { return; }
 		
 		if ( _index >= 0 && _index < size() ) {
-			contents[| _index ]	= _value;
+			ds_list_insert( contents, _index, _value );
 			
 		}
 		

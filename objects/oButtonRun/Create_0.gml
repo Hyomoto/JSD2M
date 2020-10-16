@@ -8,7 +8,7 @@ interface.onEnter	= function() {
 interface.onUp	= function() {
 	if ( Generator.busy() ) { return; }
 	
-	if ( directory_exists( Generator.savePath ) == false ) {
+	if ( Generator.clipboard == false && directory_exists( Generator.savePath ) == false ) {
 		console.add_message( "error","error: save path doesn't exist." );
 		return;
 		

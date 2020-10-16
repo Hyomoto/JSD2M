@@ -28,7 +28,7 @@ methods		= {
 			++_i;
 			
 		}
-		_functions	+= ( _footer ? "\n" + string_repeat( "|---", _max - _i ) + "|" : "" ) + "\n";
+		_functions	+= ( _footer ? "\n" + string_repeat( "|---", _i ) + "|" : "" ) + "\n";
 		
 		_header	+= _functions;
 		

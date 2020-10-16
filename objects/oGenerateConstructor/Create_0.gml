@@ -1,9 +1,10 @@
-RenderManager().set_scale( 0.7 );
+RenderManager().set_scale( 0.25 );
 
 draw_set_font( font0 );
 
-loadPath	= ""
-savePath	= ""
+loadPath	= "";
+savePath	= "";
+wikiPath	= "";
 
 // whether or not to output verbose messages during compilation
 verbose		= true;
@@ -12,22 +13,6 @@ overwrite	= true;
 // if true, the file(s) will be copied to the clipboard instead
 clipboard	= false;
 
-/// @func strd
-/// @param string
-/// @param index
-/// @param count
-strd	= function( _string, _start, _count ) {
-	return string_trim( string_delete( _string, _start, _count ) )
-	
-}
-/// @func strc
-/// @param string
-/// @param index
-/// @param count
-strc	= function( _string, _start, _count ) {
-	return string_trim( string_copy( _string, _start, _count ) )
-	
-}
 error	= function() {
 	var _string	= "ERROR in " + target.name + " ::\n";
 	

@@ -38,7 +38,7 @@ header	= {
 	example : "// no example provided",
 	wiki : undefined,
 	implements : undefined,
-	repo : other.repo
+	repo : other.wikiPath
 };
 repeat( target.remaining() ) {
 	var _read	= string_trim( target.read() );
