@@ -1,8 +1,4 @@
 function Argument( _string ) constructor {
-	//static toString	= function() {
-	//	return "|`" + name + "`|" + type + "|" + desc + "|";
-		
-	//}
 	static _parser	= new Parser();
 	
 	_parser.parse( _string );

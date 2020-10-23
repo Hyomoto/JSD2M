@@ -1,5 +1,3 @@
-/// @desc 
-/// @param value
 function ScriptEngine_Value( _value, _type ) constructor {
 	get		= function( _engine, _package ) {
 		if ( type == SCRIPT_EXPRESSION_TYPE_VARIABLE ) {
@@ -195,7 +193,6 @@ function ScriptEngine_Function( _value ) constructor {
 		break;
 		
 	}
-	/// @ignore
 	_t	= string_trim( string_delete( _args, 1, _i ) );
 	
 	if ( _t != "" ) {

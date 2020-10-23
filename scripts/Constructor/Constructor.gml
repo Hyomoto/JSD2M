@@ -4,7 +4,7 @@
 /// @desc	Creates a new Constructor entry.
 function Constructor( _header, _package ) constructor {
 	static add_method	= function( _header, _package ) {
-		return methods.add( new Method( _header, _package ) );
+		return methods.add( new Method( _header, _package, self ) );
 		
 	}
 	static add_variable	= function( _var ) {
@@ -13,6 +13,7 @@ function Constructor( _header, _package ) constructor {
 	}
 	methods		= new DsLinkedList();
 	variables	= new DsLinkedList();
+	implements	= "None";
 	
 	name	= _header[ 0 ];
 	header	= _header[ 0 ];
@@ -37,11 +38,11 @@ function Constructor( _header, _package ) constructor {
 			
 		}
 		if ( _package.name != "" ) { name = _package.name; }
-		desc	= _package.desc;
-		example	= _package.example;
-		returns	= _package.returns;
-		wikiIndex	= _package.wikiIndex;
-		wikiCategory= _package.wikiCategory;
+		desc		= ( _package.desc != undefined ?  _package.desc : desc );
+		example		= ( _package.example != undefined ? _package.example : example );
+		returns		= ( _package.returns != undefined ? _package.returns : returns );
+		wikiIndex	= ( _package.wikiIndex != undefined ? _package.wikiIndex : wikiIndex );
+		wikiCategory= ( _package.wikiCategory != undefined ? _package.wikiCategory : wikiCategory );
 		
 	} else {
 		var _i = 0; repeat( array_length( args ) ) {

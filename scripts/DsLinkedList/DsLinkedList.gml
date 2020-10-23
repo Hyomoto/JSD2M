@@ -33,10 +33,6 @@ function DsLinkedList() : DsChain() constructor {
 		
 		while ( _seek != undefined ) {
 			if ( _seek == _link ) {
-				if ( _link == step ) {
-					next();
-					
-				}
 				if ( _last != undefined ) {
 					_last.chain	= _link.chain;
 					
@@ -118,6 +114,14 @@ function DsLinkedList() : DsChain() constructor {
 		final	= undefined;
 		
 		clear_DsChain();
+		
+	}
+	/// @override
+	static copy_DsChain		= copy;
+	/// @desc	Returns a copy of this DsLinkedList.
+	/// @returns (#DsLinkedList)
+	static copy		= function() {
+		return copy_DsChain( DsLinkedList, "add" );
 		
 	}
 	static is		= function( _data_type ) {

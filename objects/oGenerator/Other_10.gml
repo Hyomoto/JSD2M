@@ -75,61 +75,85 @@ while ( target.eof() == false ) {
 		}
 		
 	}
-	switch ( _open ) {
-		// root, check for functions
-		case false :
-			if ( string_copy( _read, 1, 8 ) != "function" ) { break; }
+	if ( string_pos( "#macro", _read ) > 0 ) {
+		macros.enqueue( new Macro( strd( _read, 1, string_pos( "#macro", _read ) + 5 ), _header ) );
+		_header	= undefined;
+		trace(  "build,macro", "Found macro: ", macros.tail().name );
+		
+	} else {
+		switch ( _open ) {
+			// root, check for functions
+			case false :
+				if ( string_copy( _read, 1, 8 ) != "function" ) { break; }
 			
-			_read	= strd( _read, 1, 8 );
-			// found constructor
-			if ( string_pos( "constructor", _read ) > 0 ) {
-				_open	= new Constructor( string_to_func( strc( _read, 1, string_pos( "constructor", _read ) - 1 ) ), _header );
-				_header	= undefined;
-				trace(  "build,constructor", "Found constructor: ", _open.name );
-				output.enqueue( _open );
-				++constructors;
-				
-			// found function
-			} else {
-				_open	= new Method( string_to_func( _read ), _header, undefined );
-				
-				_ignore	= true;
-				_header	= undefined;
-				trace(  "build,function", "Found function: ", _open.name );
-				output.enqueue( _open );
-				++functions;
-				
-			}
-			break;
+				_read	= strd( _read, 1, 8 );
 			
-		default :
-			var _static	= false;
+				if ( string_pos( "constructor", _read ) > 0 ) {
+					var _break	= string_explode( strc( _read, 1, string_pos( "constructor", _read ) - 1 ), ":", true );
+				
+					_open	= new Constructor( string_to_func( _break[ 0 ] ), _header );
+				
+					if ( array_length( _break ) > 1 ) {
+						_open.implements	= "(#" + strc( _break[ 1 ], 1, string_pos( "(", _break[ 1 ] ) - 1 ) + ")";
+					
+					}
+					_header	= undefined;
+					trace(  "build,constructor", "Found constructor: ", _open.name );
+					output.enqueue( _open );
+					++constructors;
+				
+				// found function
+				} else {
+					_open	= new Method( string_to_func( _read ), _header, undefined );
+				
+					_ignore	= true;
+					_header	= undefined;
+					trace(  "build,function", "Found function: ", _open.name );
+					output.enqueue( _open );
+					++functions;
+				
+				}
+				break;
 			
-			if ( string_pos( "var", _read ) == 1 || string_pos( "if", _read ) == 1 ) { break; }
-			if ( string_pos( "=", _read ) == 0 ) { break; }
-			if ( string_pos( "static", _read ) == 1 ) { _read = strd( _read, 1, 6 ); _static = true; }
+			default :
+				var _static	= false;
 			
-			var _break	= string_explode( _read, "=", true );
-			// method
-			if ( string_pos( "function", _break[ 1 ] ) == 1 ) {
-				var _name	= string_to_func( _break[ 1 ] );
+				if ( string_pos( "var", _read ) == 1 || string_pos( "if", _read ) == 1 ) { break; }
+				if ( string_pos( "=", _read ) == 0 ) { break; }
+				if ( string_pos( "static", _read ) == 1 ) { _read = strd( _read, 1, 6 ); _static = true; }
+			
+				var _break	= string_explode( _read, "=", true );
+				// method
+				if ( string_pos( "function", _break[ 1 ] ) == 1 ) {
+					var _name	= string_to_func( _break[ 1 ] );
 				
-				_name[ 0 ]	= _break[ 0 ];
-				var _d = _open.add_method( _name, _header, _open );
-				_method	= true;
-				_header	= undefined;
+					_name[ 0 ]	= _break[ 0 ];
+					var _d = _open.add_method( _name, _header, _open );
+					_method	= true;
+					_header	= undefined;
 				
-			// variable
-			} else {
-				var _variable	= _header == undefined || _header.arguments.size() == 0 ? new Argument( _break[ 0 ] ) : _header.toArray()[0];
+				// variable
+				} else {
+					var _variable;
 				
-				_variable.name	= _break[ 0 ];
+					if ( _header == undefined || _header.arguments.size() == 0 ) {
+						_variable	= new Argument( _break[ 0 ] );
+					
+						if( _header != undefined ) { _variable.desc = _header.desc; }
+					
+					} else {
+						_variable	= _header.arguments.toArray()[0];
+					
+					}
+					_variable.name	= _break[ 0 ];
 				
-				var _d	= _open.add_variable( _variable );
-				_header	= undefined;
+					var _d	= _open.add_variable( _variable );
+					_header	= undefined;
 				
-			}
-			break;
+				}
+				break;
+		
+		}
 		
 	}
 	if ( _closure > 1 ) {

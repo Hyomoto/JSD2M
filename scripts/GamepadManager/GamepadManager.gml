@@ -1,7 +1,9 @@
 #macro GAMEPAD_MAXIMUM_VIRTUAL_PORTS	4
-#macro Gamepads	GamepadManager()
 
 /// @func GamepadManager
+/// @desc	GamepadManager is a wrapper for internal gamepad system functions. It hooks the system up
+//		to the FAST event framework so it can listen for controller connects and disconnects, as well
+//		as manages the virtual port mapping.
 /// @wiki Input-Handling-Index
 function GamepadManager() {
 	static manager	= function() constructor {
@@ -17,22 +19,21 @@ function GamepadManager() {
 			logger.write( _string );
 			
 		}
-		
 		static port	= function( _port ) constructor {
 			static gain_pad	= function( _pad ) {
 				if ( gamepad == undefined ) { return; }
 				
-				GamepadManager().log( undefined, "gain_pad", "Port ", portId, " got gamepad ", _pad );
+				GamepadManager().log( "Port ", portId, " got gamepad ", _pad, "." );
 				
 				gamepad.padIndex	= _pad;
-				padIndex	= _pad;
-				lastIndex	= _pad;
+				padIndex			= _pad;
+				lastIndex			= _pad;
 				
 			}
 			static lose_pad	= function() {
 				if ( padIndex == -1 ) { return; }
 				
-				GamepadManager().log( undefined, "lose_pad", "Port ", portId, " lost gamepad ", padIndex );
+				GamepadManager().log( "Port ", portId, " lost gamepad ", padIndex, "." );
 				
 				gamepad.padIndex	= -1;
 				padIndex			= -1;
@@ -133,7 +134,17 @@ function GamepadManager() {
 			++_i;
 			
 		}
-		var _event	= event_create( FAST.STEP_BEGIN, 0, undefined, function() {
+		var _event	= new FrameEvent( FAST.ASYNC_SYSTEM, 0, undefined, function() {
+			switch ( async_load[? "event_type" ] ) {
+				case "gamepad discovered" : case "gamepad lost" :
+					publisher.channel_notify( async_load[? "event_type" ], async_load[? "pad_index" ] );
+					
+					break;
+					
+			}
+
+		});
+		var _event	= new FrameEvent( FAST.STEP_BEGIN, 0, undefined, function() {
 			var _i = 0; repeat ( gamepad_get_device_count() ) {
 				if ( gamepad_is_connected( _i ) ) {
 					ds_queue_enqueue( padQueue, _i );
@@ -153,7 +164,7 @@ function GamepadManager() {
 				
 			}
 			
-		}, true );
+		}).once();
 		
 	}
 	static instance	= new Feature( "FAST Gamepad", "1.0a", "10/10/2020", new manager() );

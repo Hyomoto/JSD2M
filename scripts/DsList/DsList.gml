@@ -28,10 +28,6 @@ function DsList() constructor {
 		}
 		
 	}
-	static clear	= function() {
-		ds_list_clear( pointer );
-		
-	}
 	static size	= function() {
 		return ds_list_size( pointer );
 	}
@@ -58,9 +54,14 @@ function DsList() constructor {
 		return ds_list_find_value( pointer, _index );
 		
 	}
+	static clear	= function() { ds_list_clear( pointer ); }
 	static destroy	= function() { ds_list_destroy( pointer ); }
-	static is		= function( _data_type ) {
-		return _data_type == DsList;
+	static copy		= function() {
+		var _list	= ds_list_create();
+		
+		ds_list_copy( _list, pointer );
+		
+		return _list;
 		
 	}
 	static toArray	= function() {
@@ -87,7 +88,13 @@ function DsList() constructor {
 		return _string;
 		
 	}
+	static is		= function( _data_type ) {
+		return _data_type == DsList;
+		
+	}
 	pointer	= ds_list_create();
+	//ref		= gc_list()
+	//pointer	= ref.pointer;
 	
 	var _i = 0; repeat( argument_count ) {
 		add( argument[ _i++ ] );

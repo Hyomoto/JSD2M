@@ -1,5 +1,6 @@
 /// @func FileManager
-/// @wiki File-Handling-Index
+/// @desc	FileManager is a wrapper for internal file system functions.
+/// @wiki Core-Index Files
 function FileManager() {
 	static manager	= function() constructor {
 		static log	= function() {
@@ -21,3 +22,4 @@ function FileManager() {
 	return instance.struct;
 	
 }
+FileManager();

@@ -1,83 +1,29 @@
 /// @func InputDevice
-/// @param inputs...
+/// @param {string}	inputs...	The names of the inputs to create on this InputDevice.
+/// @desc	Creates a new input device with the given input characteristics. While most names are
+//		not reserved, because of how the internal variables must be assigned.
 /// @wiki Input-Handling-Index
 function InputDevice() constructor { 
-	static input	= function( _name ) constructor {
-		static raw		= function() {
-			var _i = 0; repeat( size ) {
-				if ( inputs[ _i++ ].down() ){
-					if ( event == undefined ) {
-						event	= new FAST_Event( FAST.STEP, 0, undefined, function() {
-							if ( raw() == false ) {
-								last		= false;
-								event.once	= true;
-								event		= undefined;
-								
-							}
-							
-						});
-						last	= true;
-						
-					}
-					return true;
-					
-				}
-				
-			}
-			return false;
-			
-		}
-		static bind		= function( _input ) {
-			inputs[ size++ ]	= _input;
-			
-		}
-		static pressed	= function() {
-			return ( last == false && raw() );
-			
-		}
-		static held		= function() {
-			return ( last == true && raw() );
-			
-		}
-		static released	= function() {
-			return ( last == true && raw() == false );
-			
-		}
-		static toString	= function() {
-			return name + "(" + string( raw() ) + ")";
-			
-		}
-		name	= _name;
-		inputs	= [];
-		event	= undefined;
-		last	= false;
-		size	= 0;
-		
-	}
-	static add_input	= function( _input, _index ) {
-		_index	= ( is_undefined( _index ) ? array_length( inputs ) : _index );
-		
+	/// @oaram {string}	input	The name of the input to add.
+	/// @param {int}	index	optional: The internal index to bind this input to. Using this argument could cause unexpected crashes.
+	/// @desc While the normal way of declaring inputs is to do so when the InputDevice is created,
+	//		calling add_input() after creation will create the specified input.
+	static __add_input	= function( _input, _index ) {
 		if ( variable_struct_exists( self, _input ) ) {
 			log_nonfatal( undefined, "InputDevice.add_input", "Input \"", _input, "\" already defined!" );
 			
 			return;
 			
 		}
-		inputs[ _index ]	= new input( _input );
-		
-		variable_struct_set( self, _input, inputs[ _index ] );
+		variable_struct_set( self, _input, new ( InputManager() ).input( _input ) );
 		
 	}
 	static is		= function( _data_type ) {
 		return _data_type == InputDevice;
 		
 	}
-	inputs	= array_create( argument_count );
-	
 	var _i = 0; repeat( argument_count ) {
-		add_input( argument[ _i ], _i );
-		
-		++_i;
+		__add_input( argument[ _i++ ] );
 		
 	}
 	

@@ -31,6 +31,14 @@
             {"propertyId":{"name":"icon","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":160.0,"resourceVersion":"1.0","name":"inst_B02FC8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oPageWriter","path":"objects/oPageWriter/oPageWriter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":0.0,"resourceVersion":"1.0","name":"pagewriter","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"filter","path":"objects/oButtonFilter/oButtonFilter.yy",},"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"value":"\"macro\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"icon","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":160.0,"resourceVersion":"1.0","name":"inst_72735D13","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"filter","path":"objects/oButtonFilter/oButtonFilter.yy",},"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"value":"\"object\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"icon","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":160.0,"resourceVersion":"1.0","name":"inst_2863230A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oGenerator","path":"objects/oGenerator/oGenerator.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"Generator","tags":[],"resourceType":"GMRInstance",},
@@ -85,6 +93,8 @@
     {"name":"inst_4812B526","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_B02FC8","path":"rooms/Room1/Room1.yy",},
     {"name":"pagewriter","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_72735D13","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_2863230A","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

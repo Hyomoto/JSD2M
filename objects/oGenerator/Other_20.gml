@@ -52,3 +52,24 @@ while ( _index_key != undefined ) {
 	_index_key	= ds_map_find_next( table.pages, _index_key );
 	
 }
+trace( "build", "Writing macros..." );
+
+var _file	= new FileText( path + "Macros-Index" + ".md", false, true );
+var _header	= @"|Name|Type|Value|Description|
+|---|---|---|---|";
+var _macro	= @"|{$name}|{$type}|{$value}|{$desc}|";
+
+_file.write( _header );
+
+var _macros	= macros.size();
+
+repeat ( macros.size() ) {
+	var _meta	= macros.dequeue();
+	var _string	= string_replace_tags( _macro, _meta );
+	
+	_file.write( _string );
+	
+}
+trace( "build,macros", "Wrote ", _macros, " macros." );
+
+_file.close();

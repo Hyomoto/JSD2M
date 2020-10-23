@@ -18,6 +18,8 @@ function string_replace_tags( _string, _source ) {
 		
 		var _replace	= variable_struct_get( _source, _tag[ 0 ] );
 		
+		if ( _tag[ 0 ] != "example" && _replace != undefined ) { _replace = string_replace_links( _replace ); }
+		
 		_string	= string_copy( _string, 1, _tag[ 1 ] - 1 ) + ( _replace == undefined ? "" : _replace ) + string_delete( _string, 1, _tag[ 2 ] );
 		
 		//_string	= string_delete( _string, _tag[ 1 ], _tag[ 2 ] - _tag[ 1 ] + 1 );

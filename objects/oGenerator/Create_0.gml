@@ -1,5 +1,3 @@
-RenderManager().set_scale( 0.7 );
-
 draw_set_font( font0 );
 
 loadPath	= ""
@@ -9,9 +7,11 @@ wikiPath	= "";
 parser		= new Parser();
 files		= new DsQueue();
 output		= new DsQueue();
+macros		= new DsQueue();
 
 functions		= 0;
 constructors	= 0;
+objects			= 0;
 
 // @desc whether or not to output verbose messages during compilation
 verbose		= true;

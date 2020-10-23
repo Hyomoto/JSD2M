@@ -1,12 +1,13 @@
 function Header( _file, _parser ) constructor {
 	name	= "";
-	desc	= "no description provided";
-	example	= "// no example provided";
-	returns	= "N/A 'undefined`";
-	duplicate	= false;
+	desc		= undefined;
+	example		= undefined;
+	returns		= undefined;	
+	macro		= undefined;
 	arguments	= new DsLinkedList();
 	wikiIndex	= undefined;
 	wikiCategory= "Default";
+	duplicate	= false;
 	alias		= false;
 	
 	while ( _file.eof() == false ) {
@@ -43,6 +44,13 @@ function Header( _file, _parser ) constructor {
 				wikiIndex	= _read[ 0 ];
 				
 				if ( array_length( _read ) > 1 ) { wikiCategory = _read[ 1 ]; }
+				
+				continue;
+			
+			case "@macro" :
+				_read	= string_split_next( _tag[ 1 ], " \t" );
+				
+				macro	= { type : strc( _tag[ 1 ], 1, _read - 1 ), name : strd( _tag[ 1 ], 1, _read ) }
 				
 				continue;
 				

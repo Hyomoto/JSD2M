@@ -1,0 +1,1 @@
+RenderManager().set_scale( 0.7 );
