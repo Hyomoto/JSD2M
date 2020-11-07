@@ -14,14 +14,14 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 	//		top-most interface that it finds. Any previous interactions will have their exit code
 	//		called as well.
 	static update	= function( _x, _y, _exit ) {
-		if ( _exit == true || point_in_rectangle( _x, _y, x, y, w, h ) ) {
-			var _i = array_length( content ) - 1; repeat( array_length( content ) ) {
-				if ( content[ _i++ ].update( _x, _y ) ) {
+		if ( _exit != true || point_in_rectangle( _x, _y, x, y, x + w - 1, y + h - 1 ) ) {
+			var _i = array_length( content ); repeat( array_length( content ) ) {
+				if ( content[ --_i ].update( _x, _y ) ) {
 					if ( last != undefined ) {
 						last.update( _x, _y, true );
 						
 					}
-					last	= content[ _i - 1 ];
+					last	= content[ _i ];
 					
 					break;
 					
@@ -64,6 +64,10 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 			
 		}
 		return _value;
+		
+	}
+	static is	= function( _data_type ) {
+		return _data_type == PointerStack;
 		
 	}
 	/// @desc The last interface to be interacted with.

@@ -1,6 +1,6 @@
-/// @func Interface
+/// @func OldInterface
 /// @param Shape
-function Interface( _shape ) constructor {
+function OldInterface( _shape ) constructor {
 	static change_state	= function( _state, _event ) {
 		if ( other.state != _state ) {
 			other.state	= _state;

@@ -25,8 +25,13 @@ function PointerInterface( _shape ) constructor {
 		}
 		
 	}
+	static is	= function( _data_type ) {
+		return _data_type == PointerInterface;
+		
+	}
 	/// @desc The internal Shape.
 	shape	= undefined;
+	state	= undefined;
 	
 	if ( is_struct_of( _shape, Shape ) ) {
 		shape	= _shape;

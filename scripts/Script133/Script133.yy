@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/JSDocToMarkdown/Scripts.yy",
+    "name": "JSDocToMarkdown",
+    "path": "JSDocToMarkdown.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "Interface",
+  "name": "Script133",
   "tags": [],
   "resourceType": "GMScript",
 }

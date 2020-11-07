@@ -30,8 +30,7 @@ set_text	= function( _text ) {
 	}
 	
 }
-interface	= new Interface( new ShapeRectangle( bbox_left, bbox_top, bbox_right - bbox_left + 1, bbox_bottom - bbox_top + 1 ) );
-state	= STATE_UP;
+interface	= new PointerSimpleMouse( new ShapeRectangle( bbox_left, bbox_top, bbox_right - bbox_left + 1, bbox_bottom - bbox_top + 1 ) );
 
 text	= "";
 conc	= "";
