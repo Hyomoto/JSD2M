@@ -16,8 +16,8 @@ function Method( _header, _package, _parent ) constructor {
 	// defaults
 	if ( _parent != undefined ) {
 		switch ( name ) {
-			case "is" :
-				args[ 0 ]	= new Argument( "{Constructor} type The Constructor to compare this against." );
+			case "is" : // @param {string} string The string to parse
+				args[ 0 ]	= "{Constructor} type The Constructor to compare this against.";
 				returns	= lookup_return( "bool" );
 				desc	= "Returns `true` if the provided type is " + string( _parent.name ) + ".";
 				break;

@@ -27,7 +27,7 @@ while ( _index_key != undefined ) {
 		_trim	= string_replace( _index_key, "-Index", "" )
 		
 		_file	= new FileText( _filename, false, true );
-		_file.write( "|Jump To|[`back`](https://github.com/Hyomoto/FASTv33/wiki/" + _trim + ")|" );
+		_file.write( "|Jump To|[`back`](" + _trim + ")|" );
 		_file.write( "|---|---|\n\n" );
 		
 		while ( _header_key != undefined ) {

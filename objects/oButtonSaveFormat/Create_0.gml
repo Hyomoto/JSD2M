@@ -17,5 +17,5 @@ interface.onEnter	= function() {
 }
 interface.onUp	= function() {
 	set_clipboard( !Generator.clipboard );
-	
+	interface.onEnter()
 }

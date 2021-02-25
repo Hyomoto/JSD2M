@@ -6,7 +6,7 @@
     "path": "JSDocToMarkdown.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "Script133",
+  "name": "Interface",
   "tags": [],
   "resourceType": "GMScript",
 }
