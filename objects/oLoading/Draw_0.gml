@@ -1,5 +1,7 @@
-var _px	= 4;
+var _px	= room_width div 2;
 var _py	= ( h - string_height( display ) ) div 2;
+
+draw_set_halign( fa_center );
 
 if ( bg.update() ) {
 	bg.set();
@@ -28,3 +30,5 @@ if ( fg.update() ) {
 	
 }
 fg.draw_part( 0, 0, w * perc, h, x, y );
+
+draw_set_halign( fa_left );

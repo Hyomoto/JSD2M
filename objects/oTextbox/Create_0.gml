@@ -7,7 +7,7 @@ set_text	= function( _text ) {
 		
 		text	= _text;
 		
-		variable_instance_set( Generator, file, _text );
+		variable_instance_set( PROGRAM, file, _text );
 		
 		if ( string_width( text ) + 8 > _w ) {
 			var _next	= "";

@@ -1,28 +1,26 @@
 function Argument( _string ) constructor {
-	static _parser	= new Parser();
+	static __parser	= new Parser();
 	
-	_parser.parse( _string );
+	__parser.parse( _string );
 	
-	name	= "";
-	type	= "undef";
-	desc	= "none provided";
+	var _name	= "null";
+	var _desc	= "No description";
+	var _type	= "undef";
 	
-	var _read	= _parser.next();
-	
-	// found type
-	if ( string_char_at( _read, 1 ) == "{" ) {
-		type	= string_copy( _read, 2, string_length( _read ) - 2 );
-		name	= _parser.next();
-		
-	} else {
-		name	= _read;
+	if ( string_char_at( __parser.peek(), 1 ) == "{" ) {
+		_type	= new Type( __parser.next() );
 		
 	}
-	// read name
-	// set description, if it exists
-	if ( _parser.has_next() ) {
-		desc	= string_trim( _parser.next_line() );
+	if ( __parser.has_next() ) {
+		_name	= __parser.next();
 		
 	}
+	if ( __parser.has_next() ) {
+		_desc	= string_trim( __parser.remaining() );
+		
+	}
+	name		= _name;
+	description	= _desc;
+	type		= _type;
 	
 }

@@ -15,4 +15,4 @@ bg	= new Surface( w, h );
 fg	= new Surface( w, h );
 
 display	= "0/0"
-perc	= 0.5;
+perc	= 0.0;

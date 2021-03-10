@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Textbox",
-    "path": "folders/JSDocToMarkdown/Textbox.yy",
+    "path": "folders/UI/Textbox.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTextbox",

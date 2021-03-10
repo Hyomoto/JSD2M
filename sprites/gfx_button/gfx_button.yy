@@ -81,7 +81,7 @@
   ],
   "parent": {
     "name": "Buttons",
-    "path": "folders/JSDocToMarkdown/Buttons.yy",
+    "path": "folders/UI/Buttons.yy",
   },
   "resourceVersion": "1.0",
   "name": "gfx_button",

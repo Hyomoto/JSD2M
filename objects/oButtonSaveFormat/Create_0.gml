@@ -1,7 +1,7 @@
 set_clipboard	= function( _true ) {
 	icon	= ( _true ? 3 : 4 );
 	
-	Generator.clipboard		= _true;
+	PROGRAM.clipboard		= _true;
 	oButtonSaveTo.enable	= !_true;
 	textbox_save.enable		= !_true;
 	
@@ -16,6 +16,6 @@ interface.onEnter	= function() {
 	
 }
 interface.onUp	= function() {
-	set_clipboard( !Generator.clipboard );
+	set_clipboard( !PROGRAM.clipboard );
 	interface.onEnter()
 }

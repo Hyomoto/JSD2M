@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Console",
-    "path": "folders/JSDocToMarkdown/Console.yy",
+    "path": "folders/UI/Console.yy",
   },
   "resourceVersion": "1.0",
   "name": "oConsole",

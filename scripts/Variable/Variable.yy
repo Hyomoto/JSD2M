@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/JSDocToMarkdown/Scripts.yy",
+    "name": "Parser",
+    "path": "folders/JSD2M/Parser.yy",
   },
   "resourceVersion": "1.0",
   "name": "Variable",

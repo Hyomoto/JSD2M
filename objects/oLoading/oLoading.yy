@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Loading",
-    "path": "folders/JSDocToMarkdown/Loading.yy",
+    "path": "folders/UI/Loading.yy",
   },
   "resourceVersion": "1.0",
   "name": "oLoading",

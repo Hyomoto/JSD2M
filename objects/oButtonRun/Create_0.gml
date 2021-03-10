@@ -7,20 +7,20 @@ interface.onEnter	= function() {
 	
 }
 interface.onUp	= function() {
-	if ( Generator.busy() ) { return; }
+	if ( instance_exists( oGenerator ) ) { return; }
 	
-	if ( Generator.clipboard == false && directory_exists( Generator.savePath ) == false ) {
+	if ( PROGRAM.clipboard == false && directory_exists( PROGRAM.savePath ) == false ) {
 		console.add_message( "error","error: save path doesn't exist." );
 		return;
 		
 	}
-	if ( directory_exists( Generator.loadPath ) == false ) {
+	if ( directory_exists( PROGRAM.loadPath ) == false ) {
 		console.add_message( "error","error: load path doesn't exist." );
 		return;
 		
 	}
 	loadingbar.visible	= true;
 	
-	with ( Generator ) { event_user( 15 ); }
+	instance_create_layer( 0, 0, layer, oGenerator );
 	
 }

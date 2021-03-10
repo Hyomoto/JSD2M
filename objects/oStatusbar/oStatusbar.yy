@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Status",
-    "path": "folders/JSDocToMarkdown/Status.yy",
+    "path": "folders/UI/Status.yy",
   },
   "resourceVersion": "1.0",
   "name": "oStatusbar",

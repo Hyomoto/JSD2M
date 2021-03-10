@@ -1,28 +1,15 @@
+/// @func string_replace_tags
 function string_replace_tags( _string, _source ) {
-	static next_tag	= function( _string ) {
-		var _open	= string_pos( "{$", _string );
+	var _var; repeat( string_count( "{$", _string ) ) {
+		var _meta	= ( function(_string, _at ) { var _open	= string_pos( "{$", _string ); var _close	= string_pos_ext( "}", _string, _open ); if ( not _open || not _close ) { return undefined; } return { tag: string_copy( _string, _open + 2, _close - _open - 2 ), pos: _open, count: _close - _open + 1 }; })( _string );
 		
-		if ( _open == 0 ) { return undefined; }
+		if ( _meta == undefined ) { break; }
 		
-		var _close	= string_pos_ext( "}", _string, _open );
+		_var	= string( string_find_variable( _meta.tag, _source ) );
 		
-		if ( _close == 0 ) { return undefined; }
+		_string	= string_delete( _string, _meta.pos, _meta.count );
 		
-		return [ string_copy( _string, _open + 2, _close - _open - 2 ), _open, _close ];
-		
-	}
-	while ( true ) {
-		var _tag	= next_tag( _string );
-		
-		if ( _tag == undefined ) { break; }
-		
-		var _replace	= variable_struct_get( _source, _tag[ 0 ] );
-		
-		if ( _tag[ 0 ] != "example" && _replace != undefined ) { _replace = string_replace_links( _replace ); }
-		
-		_string	= string_copy( _string, 1, _tag[ 1 ] - 1 ) + ( _replace == undefined ? "" : _replace ) + string_delete( _string, 1, _tag[ 2 ] );
-		
-		//_string	= string_delete( _string, _tag[ 1 ], _tag[ 2 ] - _tag[ 1 ] + 1 );
+		_string	= string_insert( _var, _string, _meta.pos );
 		
 	}
 	return _string;

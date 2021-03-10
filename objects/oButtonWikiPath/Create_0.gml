@@ -6,7 +6,7 @@ interface.onEnter	= function() {
 	
 }
 interface.onUp	= function() {
-	var _path	= get_string( "Enter the path to the wiki:", oGenerator.wikiPath );
+	var _path	= get_string( "Enter the path to the wiki:", PROGRAM.wikiPath );
 	
 	if ( _path == "" ) { return; }
 	

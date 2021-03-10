@@ -145,8 +145,8 @@
   "canGenerateBitmap": true,
   "maintainGms1Font": false,
   "parent": {
-    "name": "JSDocToMarkdown",
-    "path": "folders/JSDocToMarkdown.yy",
+    "name": "UI",
+    "path": "folders/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "font0",
