@@ -9,7 +9,7 @@
 //	show_debug_message( _parser.next() );
 //}
 /// @wiki Core-Index Parsing
-function Parser() constructor {
+function Parser( _divider ) constructor {
 	/// @desc Returns the length of the internal string
 	/// @returns intp
 	static size	= function() {
@@ -46,46 +46,68 @@ function Parser() constructor {
 	/// @desc Returns the next word in the string, or `undefined` if there is nothing left to parse.
 	/// @returns string||null
 	static next		= function() {
-		if ( has_next() == false ) {
-			return undefined;
+		if ( has_next() == false ) { return undefined; }
+		
+		var _string = ""; while ( _string == "" ) {
+			var _next	= string_find_first( divider, content, last );
+			
+			if ( _next == 0 ) {
+				_string	= string_trim( string_delete( content, 1, last ), divider );
+				
+				last	= size();
+				
+				break;
+				
+			}
+			_string	= string_trim( string_copy( content, last, _next - max( 1, last ) ), divider );
+			
+			last	= _next;
 			
 		}
-		var _string;
-		
-		do {
-			var _peek	= peek();
-			
-			_string	= _peek[ 0 ];
-			last	= _peek[ 1 ];
-			
-		} until ( _string != "" );
-		
 		return _string;
 		
 	}
 	/// @desc Returns the rest of the unparsed string, or `undefined` if nothing is left.
 	/// @returns string || null
-	static next_line	= function() {
+	static remaining	= function() {
 		if ( has_next() == false ) {
-			return undefined;
+			return "";
 			
 		}
 		var _string	= string_copy( content, last, size() - last + 1 );
-		
-		last	= size();
 		
 		return _string;
 		
 	}
 	/// @desc Returns the next word in the string without advancing the parser.
 	static peek	= function() {
-		var _next	= string_find_first( divider, content, last );
+		var _last	= last;
+		var _string	= next();
 		
-		if ( _next == 0 ) {
-			return [ string_trim( string_delete( content, 1, last ) ), size() ];
-			
-		}
-		return [ string_trim( string_copy( content, last, _next - max( 1, last ) ) ), _next ];
+		last	= _last;
+		
+		return _string;
+		
+	}
+	static advance		= function( _amount ) {
+		last	= min( size(), last + _amount );
+		
+	}
+	static count	= function( _char ) {
+		return string_count( _char, content );
+		
+	}
+	static copy	= function( _length ) {
+		return string_copy( content, last + 1, _length );
+		
+	}
+	static load	= function( _data ) {
+		last	= _data.i;
+		content	= _data.c;
+		
+	}
+	static save	= function() {
+		return { i: last, c: content }
 		
 	}
 	/// @desc Returns the internal string broken up into words as an array.
@@ -110,8 +132,13 @@ function Parser() constructor {
 		return _array;
 		
 	}
+	/// @param {bool} remaining? optional: if true, returns the unparsed remainder
 	/// @desc Returns the internal string.
-	static toString	= function() {
+	static toString	= function( _remaining ) {
+		if ( _remaining == true ) {
+			return string_delete( content, 1, last );
+			
+		}
 		return content;
 		
 	}
@@ -120,9 +147,9 @@ function Parser() constructor {
 		
 	}
 	/// @desc the internal string
-	content	= "";
+	content	= ( argument_count > 0 ? argument[ 0 ] : "" );
 	/// @desc The character string used to find the next breakpoint. Default: " \t" (whitespace)
-	divider	= " \t";
+	divider	= ( is_string( _divider ) ? _divider : " \t" );
 	/// @desc the last position read from
 	last	= 0;
 	

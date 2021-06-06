@@ -23,6 +23,6 @@ function safe_throw( _error, _attributes ){
 		_script		= _error.stacktrace[ 0 ];
 		
 	}
-	syslog( "ERROR! Caught ", _exception, " in ", string( _script ), " :: ", string( _message ) );
+	ERROR.notify( string_con( "ERROR! Caught ", _exception, " in ", string( _script ), " :: ", string( _message ) ) );
 	
 }

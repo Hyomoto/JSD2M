@@ -36,6 +36,10 @@ text	= "";
 conc	= "";
 enable	= true;
 
+interface.onUp	= function() {
+	clipboard_set_text( text );
+	
+}
 interface.onEnter	= function() {
 	statusbar.set_text( text );
 	

@@ -13,3 +13,12 @@ oButtonSaveFormat.set_clipboard( ini_read_string( "settings", "clipboard", "true
 ini_close();
 
 loadingbar.visible	= false;
+
+ERROR.add( function( _i ) {
+	syslog( _i );
+	
+});
+LOGGER.add( function( _text ) {
+	syslog( _text[1] );
+	
+});

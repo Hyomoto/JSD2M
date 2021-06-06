@@ -1,0 +1,16 @@
+> ### {$method}
+$if method.returns
+*Returns:* {$method.returns}
+$endif
+|Name|Type|Purpose|
+|---|---|---|
+$if method.arguments
+$--foreach k in method.arguments
+|{$k.name}|`{$k.type}`|{$k.description}|
+$--endfor
+$else
+|None|||
+$endif
+
+{$method.description}
+***

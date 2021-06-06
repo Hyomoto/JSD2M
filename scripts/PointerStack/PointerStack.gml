@@ -1,5 +1,8 @@
 /// @func PointerStack
-/// @param {(#PointerInterface)}	interfaces...	The interfaces to attach to this stack, this can also be another PointerStack.
+/// @param {int}	x		
+/// @param {int}	y		
+/// @param {int}	width	
+/// @param {int}	height	
 /// @desc	The PointerStack is used to create a list of (#PointerInterface)s that will be traversed in
 //		descending order to ensure only the top-most element is called. Thus, interfaces that are added
 //		later will be "above" those that were added earlier.  In the given example, the second simple
@@ -13,12 +16,18 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 	/// @desc Calls for this PointerInterface to be updated, will check all instances and update the
 	//		top-most interface that it finds. Any previous interactions will have their exit code
 	//		called as well.
-	static update	= function( _x, _y, _exit ) {
-		if ( _exit != true || point_in_rectangle( _x, _y, x, y, x + w - 1, y + h - 1 ) ) {
+	static update	= function( _x, _y ) {
+		if ( hold != undefined ) {
+			hold.update( _x, _y, true );
+			
+			return true;
+			
+		}
+		if ( point_in_rectangle( _x, _y, x, y, x + width - 1, y + height - 1 ) ) {
 			var _i = array_length( content ); repeat( array_length( content ) ) {
 				if ( content[ --_i ].update( _x, _y ) ) {
-					if ( last != undefined ) {
-						last.update( _x, _y, true );
+					if ( last != undefined && last != content[ _i ] ) {
+						last.update( _x, _y, false );
 						
 					}
 					last	= content[ _i ];
@@ -28,13 +37,17 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 				}
 				
 			}
+			active	= true;
+			
 			return true;
 			
 		} else if ( last != undefined ) {
-			last.value.update( _x, _y, true );
+			last.update( _x, _y, false );
 			last	= undefined;
 			
 		}
+		active	= false;
+		
 		return false;
 		
 	}
@@ -66,6 +79,17 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 		return _value;
 		
 	}
+	static draw		= function( _x, _y, _color ) {
+		draw_set_color( _color ); 
+		
+		draw_rectangle( x + _x, y + _y, x + _x + width - 1, y + _y + height - 1, true );
+		
+		var _i = 0; repeat( array_length( content ) ) {
+			content[ _i++ ].draw( _x, _y );
+			
+		}
+		
+	}
 	static is	= function( _data_type ) {
 		return _data_type == PointerStack;
 		
@@ -79,8 +103,12 @@ function PointerStack( _x, _y, _w, _h ) constructor {
 	/// @desc The y position of the PointerStack.
 	y		= _y;
 	/// @desc The width of the PointerStack.
-	w		= _w;
+	width	= _w;
 	/// @desc The height of the PointerStack.
-	h		= _h;
+	height	= _h;
+	/// @desc Whether or not this stack is currently active
+	active	= false;
+	/// @desc When set to an interface element, it will not be released.
+	hold	= undefined;
 	
 }

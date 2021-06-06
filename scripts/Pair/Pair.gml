@@ -6,6 +6,7 @@
 //var _pair = new Pair( "Hello", "World!" )
 //
 //show_debug_message( _pair.a + _pair.b );
+/// @output HelloWorld! is written to the output console.
 /// @wiki Core-Index
 function Pair( _a, _b ) constructor {
 	/// @param {Pair} pair The Pair to compare to this one
@@ -16,15 +17,11 @@ function Pair( _a, _b ) constructor {
 	/// @desc This method is used to compare two values against this pair to see if they match. This is a strict comparison, thus it will only return true if both a and b match the provided arguments.
 	/// @dupe
 	static equals	= function( _a ) {
-		if ( is_struct( _a ) && _a.is( Pair ) ) {
+		if ( is_struct_of( _a, Pair ) ) {
 			return ( _a.a == a && _a.b == b );
 			
 		}
 		return ( argument_count > 1 && a == _a && b == argument[ 1 ] );
-		
-	}
-	static is		= function( _data_type ) {
-		return _data_type == Pair;
 		
 	}
 	/// @desc the a value

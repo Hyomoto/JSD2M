@@ -4,12 +4,15 @@
 /// @desc A wrapper for primitive arrays and an interface for building more complex ones.
 /// @example
 // array = new Array( 10, 0 );
-// 
-// array = new Array( [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] );
+/// @output An Array, 10 in length, of all zeroes.
 /// @wiki Core-Index Arrays
 function Array( _size ) constructor {
-	/// @desc Used as a template interface for constructors that inherit Array
-	static sort	= function() {}
+	/// @param {bool} ascending? Whether to sort by ascending/descending.
+	/// @desc Sorts the contents of the Array.
+	static sort	= function( _ascending ) {
+		array_sort( content, _ascending );
+		
+	}
 	/// @desc Returns the number of indexes in the array.
 	/// @return int
 	static size	= function() { return array_length( content ); }

@@ -32,6 +32,17 @@ function DsChain() constructor {
 		return links;
 		
 	}
+	static foreach	= function( _lambda ) {
+		var _next	= chain;
+		
+		repeat( links ) {
+			_next.value	= _lambda( _next.value );
+			_next	= _next.chain;
+			
+		}
+		return self;
+		
+	}
 	/// @desc An interface for copying building copy functions for DsChain-derived data structures.
 	/// @param {Struct}			the structure that will be copied to, or `undefined` if a new one should be created
 	/// @param {constructor}	the type of structure that should be created if one isn't provided

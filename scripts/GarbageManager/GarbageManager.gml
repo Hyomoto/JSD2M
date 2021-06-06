@@ -1,5 +1,9 @@
 /// @func GarbageManager
-/// @desc	Tracks reported data types and destroys them when they no longer exist.
+/// @desc	Tracks reported data types and destroys them when they no longer exist.  The collector is
+//		generational.  Anything created _this_ frame will be checked and cleaned up if it goes missing,
+//		otherwise it is promoted to generation 1.  Only one item in generation 1 is checked each frame,
+//		so it make take many frames before something is cleaned up, especially if a high number of
+//		tracked items exist.
 function GarbageManager() {
 	static manager	= function( _rate ) constructor {
 		static log	= function() {
@@ -15,7 +19,7 @@ function GarbageManager() {
 			
 		}
 		static destroy	= function( _gen, _index ) {
-			_gen[ _index ].destroy();
+			_gen[ _index ].destroy( _gen[ _index ].pointer );
 			
 			array_delete( gen1, _index, 1 );
 			
@@ -25,7 +29,13 @@ function GarbageManager() {
 			array_delete( gen0, _index, 1 );
 			
 		}
-		static add	= function( _ref ) {
+		static add	= function( _target, _pointer, _method ) {
+			var _ref	= {
+				destroy : _method,
+				pointer	: _pointer,
+				ref		: weak_ref_create( _target )
+				
+			};
 			array_push( gen0, _ref );
 			
 		}

@@ -6,6 +6,11 @@ update	= function( _display, _percent ) {
 	fg.redraw	= true;
 	
 }
+reset	= function() {
+	display	= "0/0"
+	perc	= 0.0;
+	
+}
 x		= x;
 y		= y;
 w		= bbox_right - bbox_left + 1;

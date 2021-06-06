@@ -1,5 +1,7 @@
 /// @func read_from_file
-function read_from_file( _target, _stack, _object ) {
+function read_from_file( _target, _object ) {
+	var _stack	= new DsStack();
+	
 	static __illegal	= new Array(["if", "else", "repeat", "while", "do", "until", "for", "switch", "break", "continue", "exit", "with", "return", "var" ]);
 	static __parser		= new Parser(" \t(");
 	
@@ -11,7 +13,7 @@ function read_from_file( _target, _stack, _object ) {
 	static __strd	= function( _string, _x, _y ) { return string_trim( string_delete( _string, _x, _y ) ); }
 	static __lump	= function() { return { arguments: [] } };
 	static __file	= function() { return {
-		type: "",
+		type: "object",
 		header: {
 			toString: function() {
 				var _string	= name + "( ";
@@ -44,6 +46,8 @@ function read_from_file( _target, _stack, _object ) {
 	var _file	= __file();
 	var _layer	= _object;
 	
+	if ( _layer == 1 ) { _stack.push( _file ); }
+	
 	var _read; while ( not _target.eof() ) {
 		_read	= string_trim( _target.read() );
 		
@@ -69,7 +73,7 @@ function read_from_file( _target, _stack, _object ) {
 					var _string	= "";
 					
 					while ( not _target.eof() && __strc( _target.peek(), 1, 2 ) == "//" && __strc( _target.peek(), 1, 3 ) != "///" )  {
-						_string	+= "\n" + string_delete( _target.read(), 1, 2 );
+						_string	+= string_delete( _target.read(), 1, 2 ) + "\n";
 						
 					}
 					_lump[$ "example" ]	= _string;
@@ -89,7 +93,7 @@ function read_from_file( _target, _stack, _object ) {
 					
 				default :
 					__parser.reset();
-					
+					break;
 					safe_throw( JSDocNotFoundException, [ _target.name, __parser.next(), _target.next ] );
 					
 					break;
@@ -161,12 +165,11 @@ function read_from_file( _target, _stack, _object ) {
 					}
 					
 				case 1 : // inside of constructors and objects
+					_layer	+= string_count( "{", _read ) - string_count( "}", _read );
 				// not a variable or a method, continue
 					if ( string_pos( "=", _read ) == 0 ) { continue; }
 					
 					var _string	= string_explode( _read, "=", true );
-					
-					_layer	+= string_count( "{", _read ) - string_count( "}", _read );
 					
 				// method
 					if ( string_pos( "function", _string[ 1 ] ) == 1 ) {
@@ -201,6 +204,7 @@ function read_from_file( _target, _stack, _object ) {
 						__parser.parse( _string[ 0 ] );
 						
 						if ( __illegal.contains( __parser.peek() ) > -1 ) { continue; }
+						if ( string_pos( ".", __parser.peek() ) > 0 ) { continue; }
 						
 						array_push( _stack.top().variables, new Variable( __parser.next(), _lump[$ "description" ] != undefined ? _lump.description : "No description." ) );
 						
@@ -219,5 +223,6 @@ function read_from_file( _target, _stack, _object ) {
 		}
 		
 	}
+	return _stack;
 	
 }

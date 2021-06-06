@@ -8,26 +8,23 @@ function PointerSimpleMouse( _shape ) : PointerInterface( _shape ) constructor {
 	static INPUT_HELD	= 3;
 	
 	static update_PointerInterface	= update;
-	static update	= function( _x, _y ) {
-		if ( update_PointerInterface( _x, _y ) ) {
+	static update	= function( _x, _y, _force ) {
+		if ( update_PointerInterface( _x, _y, _force ) ) {
 			if ( state == INPUT_NONE ) {
-				change_state( INPUT_HOVER, onEnter );
+				change_state( INPUT_HOVER, onEnter, _x, _y );
 				
 			}
-			if ( mouse_check_button_pressed( mb_left ) ) {
-				change_state( INPUT_DOWN, onDown );
+			if ( mouse_check_button( mb_left ) ) {
+				change_state( INPUT_DOWN, onDown, _x, _y );
 				
-			} else if ( mouse_check_button( mb_left ) ) {
-				change_state( INPUT_HELD, onHeld );
-				
-			} else if ( mouse_check_button_released( mb_left ) ) {
-				change_state( INPUT_HOVER, onUp );
+			} else {
+				change_state( INPUT_HOVER, onUp, _x, _y );
 				
 			}
 			return true;
 			
 		} else {
-			change_state( INPUT_NONE, onLeave );
+			change_state( INPUT_NONE, onLeave, _x, _y );
 			
 			return false;
 			

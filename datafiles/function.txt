@@ -1,0 +1,27 @@
+|Jump To|[`Go Back`]({$wiki.index})|[Arguments](#arguments)|
+|---|---|---|---|---|
+>## {$header}
+*Returns:* [{$returns}]({$returns})
+
+$if description
+{$description}
+$endif
+$if example
+```GML
+{$example}
+```
+$endif
+$if output
+```
+Output: {$output}
+```
+$endif
+## Arguments
+|Name|Type|Purpose|
+|---|---|---|
+$foreach i in header.arguments
+|{$i.name}|`{$i.type}`|{$i.description}|
+$endfor
+$if not arguments
+|None|||
+$endif
