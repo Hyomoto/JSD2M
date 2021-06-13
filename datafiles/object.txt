@@ -1,6 +1,6 @@
-|Jump To|[`Go Back`]({$wiki.index})|[Methods](#methods)|[Variables](#variables)|
-|---|---|---|---|---|
->## {$header}
+|Jump To|[`Go Back`]({$wikiIndex})|[Methods](#methods)|[Variables](#variables)|
+|---|---|---|---|
+>## {$name}
 $if description
 {$description}
 $endif
@@ -17,13 +17,11 @@ $endif
 ## Methods
 |Jump To|[`top`](#)|
 |---|---|
+
 $foreach i in methods
 $appendto -1,[**{$i.name}**](#{$i.link})|
 $appendto 0,---|
 $endfor
-//[**sort**](#sort)|[**unique**](#unique)|[**concat**](#concat-target-)|[**difference**](#difference-target-)|[**union**](#union-target-)|[**contains**](#contains-value-)|[**set**](#set-index-value-)|[**get**](#get-index-)|[**resize**](#resize-size-default-)|
-//|---|---|---|---|---|---|---|---|---|---|---|
-//[**toArray**](#toArray)|[**toString**](#toString-divider-)|[**is**](#is-type-)|
 $foreach method in methods
 $template method
 $endfor
@@ -31,6 +29,13 @@ $endfor
 ## Variables
 |Jump To|[`top`](#)|
 |---|---|
-$foreach i in variables
-* {$i.name} - {$i.desc}
-$endfor
+
+|Name|Type|Initial|Purpose|
+|---|---|---|---|
+$if variables
+$--foreach k in variables
+|{$k.name}|`{$k.type}`|{$k.initial}|{$k.description}|
+$--endfor
+$else
+|None|||
+$endif

@@ -5,13 +5,17 @@ function string_replace_tags( _string, _source ) {
 		
 		if ( _meta == undefined ) { break; }
 		
-		_var	= string( string_find_variable( _meta.tag, _source ) );
-		
+		if ( _meta.tag == "self" ) {
+			_var	= _source[$ "self" ];
+			
+		} else {
+			_var	= string( string_find_variable( _meta.tag, _source ) );
+			
+		}
 		_string	= string_delete( _string, _meta.pos, _meta.count );
-		
 		_string	= string_insert( _var, _string, _meta.pos );
 		
 	}
-	return _string;
+	return string_count( "{$", _string ) > 0 ? string_replace_tags( _string, _source ) : _string;
 	
 }

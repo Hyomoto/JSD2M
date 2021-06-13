@@ -1,5 +1,17 @@
-|Jump To|[`Go Back`]({$wikiIndex})|[Arguments](#arguments)|[Methods](#methods)|[Variables](#variables)|
-|---|---|---|---|---|
+|Jump To|[`Go Back`]({$wikiIndex})|
+|---|---|
+$if header.arguments
+$appendto -1,[Arguments](#arguments)|
+$appendto 0,---|
+$endif
+$appendto -1,[Methods](#methods)|
+$appendto 0,---|
+$if overloads
+$appendto -1,[Abstract](#abstract)|
+$appendto 0,---|
+$endif
+$appendto -1,[Variables](#Variables)|
+$appendto 0,---|
 >## {$header}
 $if implements
 *Implements:* [{$implements}]({$implements})
@@ -18,6 +30,7 @@ $if output
 Output: {$output}
 ```
 $endif
+$if header.arguments
 ## Arguments
 |Name|Type|Purpose|
 |---|---|---|
@@ -27,6 +40,7 @@ $endfor
 $if not arguments
 |None|||
 $endif
+$endif
 
 ## Methods
 |Jump To|[`top`](#)|
@@ -35,16 +49,42 @@ $foreach i in methods
 $appendto -1,[**{$i.name}**](#{$i.link})|
 $appendto 0,---|
 $endfor
-//[**sort**](#sort)|[**unique**](#unique)|[**concat**](#concat-target-)|[**difference**](#difference-target-)|[**union**](#union-target-)|[**contains**](#contains-value-)|[**set**](#set-index-value-)|[**get**](#get-index-)|[**resize**](#resize-size-default-)|
-//|---|---|---|---|---|---|---|---|---|---|---|
-//[**toArray**](#toArray)|[**toString**](#toString-divider-)|[**is**](#is-type-)|
 $foreach method in methods
 $template method
 $endfor
 
+$if overloads
+## Abstract
+|Jump To|[`top`](#)|
+|---|---|
+$foreach method in overloads
+> ### {$method}
+$if method.returns
+*Returns:* {$method.returns}
+$if method.throws
+
+$endif
+$endif
+$if method.throws
+*Throws:* {$method.throws}
+$endif
+
+{$method.description}
+***
+
+$endfor
+
+$endif
 ## Variables
 |Jump To|[`top`](#)|
 |---|---|
-$foreach i in variables
-* {$i.name} - {$i.desc}
-$endfor
+
+|Name|Type|Initial|Purpose|
+|---|---|---|---|
+$if variables
+$--foreach k in variables
+|{$k.name}|`{$k.type}`|{$k.initial}|{$k.description}|
+$--endfor
+$else
+|None|||
+$endif

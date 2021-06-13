@@ -33,6 +33,7 @@ function read_from_file( _target, _object ) {
 		implements: undefined,
 		example: undefined,
 		output: undefined,
+		throws: undefined,
 		wiki:{
 			category: "Default",
 			index: undefined
@@ -60,9 +61,12 @@ function read_from_file( _target, _object ) {
 				case "@param"	: array_push( _lump.arguments, new Argument( string_trim( __parser.remaining() ) ) ); break;
 				case "@desc"	:
 					var _string	= string_trim( __parser.remaining() );
+					var _parser	= new Parser().parse( _target.peek() );
 					
-					while ( not _target.eof() && __strc( _target.peek(), 1, 2 ) == "//" && __strc( _target.peek(), 1, 3 ) != "///" )  {
+					while ( true )  {
+						if ( string_copy( _parser.next(), 1, 2 ) != "//" || string_pos( "@", _parser.next() ) > 0 ) { break; }
 						_string	+= " " + __strd( _target.read(), 1, 2 );
+						_parser.parse( _target.peek() );
 						
 					}
 					_lump[$ "description" ]	= _string;
@@ -82,6 +86,7 @@ function read_from_file( _target, _object ) {
 					
 				case "@output"	: _lump[$ "output" ]	= string_trim( __parser.remaining() ); break;
 				case "@returns" : _lump[$ "return" ]	= string_trim( __parser.remaining() ); break;
+				case "@throws"	: _lump[$ "throws" ]	= string_trim( __parser.remaining() ); break;
 				case "@wiki"	:
 					_file.wiki[$ "index" ] = __parser.next();
 					

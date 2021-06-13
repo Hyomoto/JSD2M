@@ -75,6 +75,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6d4f25b3-04c8-487f-b050-b578c68e75a3","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Buttons",
     "path": "folders/UI/Buttons.yy",

@@ -21,6 +21,7 @@ interface.onUp	= function() {
 	}
 	if ( PROGRAM.clipboard ) {
 		var _file	= get_open_filename_ext( "Scripts|*.gml", "", PROGRAM.loadPath, "Open" );
+		var _name, _template	= "";
 		
 		if ( _file == "" ) {
 			ERROR.notify( "ERROR! File not found!" );
@@ -29,12 +30,22 @@ interface.onUp	= function() {
 		}
 		_file	= new FileText( _file, true, false );
 		
-		LOGGER.notify( [ "build", "Reading from " + filename_name( _file.name ) + "..." ] );
+		LOGGER.notify( ["build", "Processing " + _file.name + "..."] );
 		
-		var _stack	= GENERATOR.read_file( _file, string_pos( "objects/", _file ) > 0 );
+		var _stack	= GENERATOR.read_file( _file, string_pos( "\\objects\\", _file.name ) > 0 );
 		
-		var _output	= write_to_file( PROGRAM.templates[? "constructor" ], new FileText( "", false, true ), _stack.top() );
-		
+		switch ( _stack.top().type ) {
+			case "object" : _template = "object"; break;			
+			case "function" : _template = "function"; break;
+			case "constructor" : _template = "constructor"; break;
+		}
+		if ( PROGRAM.templates[? _template ] == undefined ) {
+			ERROR.notify( "ERROR! No template found for " + _name + " of type " + _stack.top().type + "! Aborted." );
+			_file.discard();
+			return;
+			
+		}
+		var _output	= write_to_file( PROGRAM.templates[? _template ], new FileText( "", false, true ), _stack.top(), _stack.top().name );
 		var _string	= "";
 		
 		_output.reset();
@@ -48,7 +59,7 @@ interface.onUp	= function() {
 		
 		clipboard_set_text( _string );
 		
-		LOGGER.notify( [ "build", "Output written to clipboard." ] );
+		LOGGER.notify( [ "build", "Output written as " + _template + " to clipboard." ] );
 		
 	} else {
 		if ( PROGRAM.loadPath == "" ) {
@@ -57,34 +68,41 @@ interface.onUp	= function() {
 			
 		}
 		var _path	= PROGRAM.loadPath;
-		var _list	= file_get_directory( _path + "scripts\\", "*.gml", true );
 		var _files	= new DsStack();
 		
-		repeat( _list.size() ) {
-			var _file	= _list.dequeue();
+		if ( PROGRAM.constructors || PROGRAM.functions ) {
+			var _list	= file_get_directory( _path + "scripts\\", "*.gml", true );
 			
-			var _name	= filename_name( _file );
-			
-			if ( string_pos( ".gml", _name ) > 0 ) {
-				_files.push( { file: _file, type : 0, name: string_replace( filename_name( _name ), ".gml", "" ) } );
+			repeat( _list.size() ) {
+				var _file	= _list.dequeue();
+				
+				var _name	= filename_name( _file );
+				
+				if ( string_pos( ".gml", _name ) > 0 ) {
+					_files.push( { file: _file, type : 0, name: string_replace( filename_name( _name ), ".gml", "" ) } );
+					
+				}
 				
 			}
 			
 		}
-		var _list	= file_get_directory( _path + "objects\\", "*.gml", true );
-		
-		repeat( _list.size() ) {
-			var _file	= _list.dequeue();
+		if ( PROGRAM.objects ) {
+			var _list	= file_get_directory( _path + "objects\\", "*.gml", true );
 			
-			var _name	= filename_name( _file );
-			
-			if ( string_pos( "Create_0.gml", _name ) > 0 ) {
-				var _path	= filename_path( _file );
+			repeat( _list.size() ) {
+				var _file	= _list.dequeue();
 				
-				_name	= string_delete( _path, 1, string_last_pos( "\\", _path ));
-				_name	= string_copy( _name, 1, string_length( _name ) - 1 );
+				var _name	= filename_name( _file );
 				
-				_files.push( { file : _file, type : 1, name: _name } );
+				if ( string_pos( "Create_0.gml", _name ) > 0 ) {
+					var _path	= filename_path( _file );
+					
+					_name	= string_delete( _path, 1, string_last_pos( "\\", _path ));
+					_name	= string_copy( _name, 1, string_length( _name ) - 1 );
+					
+					_files.push( { file : _file, type : 1, name: _name } );
+					
+				}
 				
 			}
 			

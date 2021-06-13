@@ -1,24 +1,60 @@
 function TOC() constructor {
 	static add	= function( _wiki, _table, _data ) {
-		if ( pages[? _wiki ] == undefined ) {
-			ds_map_add_map( pages, _wiki, ds_map_create() );
-			
-		}
-		_wiki	= pages[? _wiki ];
+		if ( __Pages.contains )
+			__Pages[$ _wiki ]	= {};
 		
-		if ( _wiki[? _table ] == undefined ) {
-			ds_map_add_list( _wiki, _table, ds_list_create() );
-			
-		}
-		_table	= _wiki[? _table ];
+		_wiki	= __Pages[? _wiki ];
 		
-		ds_list_add( _table, _data );
+		if ( variable_struct_exists( _wiki, _table ) == false )
+			ds_map_add_list( _wiki, _table, new LinkedList().order() );
+		
+		_wiki[? _table ].add( _data );
 		
 	}
-	static destroy	= function() {
-		ds_map_destroy( pages );
+	static write	= function( _file ) {
+		var _index_key	= __Pages.first();
+		
+		var _index_key	= ds_map_find_first( table.pages );
+		var _file, _trim;
+		
+		while ( error_type( _index_key ) != ValueNotFound ) {
+			var _index	= table.pages[? _index_key ];
+			var _header_key	= ds_map_find_first( _index );
+			var _filename	= PROGRAM.savePath + _index_key + ".md";
+			
+			LOGGER.notify( "build", _index_key, " found." );
+			
+			if ( overwrite || file_exists( _filename ) == false ) {
+				_trim	= string_replace( _index_key, "-Index", "" )
+				
+				_file	= new FileText( _filename, false, true );
+				_file.write( "|Jump To|[`back`](https://github.com/Hyomoto/FASTv33/wiki/" + _trim + ")|" );
+				_file.write( "|---|---|\n\n" );
+					
+				while ( _header_key != undefined ) {
+					var _header	= _index[? _header_key ];
+					
+					_file.write( "### " + _header_key );
+					
+					LOGGER.notify( "build", "    ", _header_key, " found..." );
+					
+					for ( var _i = ds_list_size( _header ) - 1; _i >= 0; --_i ) {
+						var _meta	= _header[| _i ];
+						_file.write( "* [" + _meta.name + "](" + _meta.path + ")" );
+						LOGGER.notify( "build", "        ", _meta, " found." );
+						
+					}
+					_header_key	= ds_map_find_next( _index, _header_key );
+					
+				}
+				_file.close();
+				
+			}
+			_index_key	= ds_map_find_next( table.pages, _index_key );
+			
+		}
 		
 	}
-	pages	= ds_map_create();
+	__Pages	= new Dictionary();
 	
 }

@@ -18,4 +18,7 @@ interface.onEnter	= function() {
 interface.onUp	= function() {
 	set_clipboard( !PROGRAM.clipboard );
 	interface.onEnter()
+	
+	PROGRAM.save();
+	
 }

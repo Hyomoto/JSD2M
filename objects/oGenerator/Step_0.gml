@@ -6,11 +6,11 @@ while( timeFrame.elapsed() < 500000 ) {
 	if ( stack.empty() ) { instance_destroy(); break; }
 	
 	var _source	= new FileText( stack.top().file, true );
-	var _input	= undefined;
-	var _input	= read_from_file( _source, stack.top().type );
+	
+	LOGGER.notify( ["build", "Processing " + _source.name + "..."] );
+	
 	try {
-		syslog( stack.top() );
-		
+		var _input	= GENERATOR.read_file( _source, string_pos( "\\objects\\", stack.top().file ) > 0 );
 		
 	} catch (_) {
 		var _meta = "";
@@ -30,11 +30,9 @@ while( timeFrame.elapsed() < 500000 ) {
 	
 	var _name, _template	= "";
 	
-	LOGGER.notify( ["build", "Processing " + _source.name + "..."] );
-	
 	repeat( _input.size() ) {
 		switch ( _input.top().type ) {
-			case "object" : _template = "object"; _name	= stack.top().name; break;			
+			case "object" : _template = "object"; _name = _input.top().name; break;			
 			case "function" : _template = "function"; _name = _input.top().header.name; break;
 			case "constructor" : _template = "constructor" _name = _input.top().header.name; break;
 		}
@@ -42,10 +40,8 @@ while( timeFrame.elapsed() < 500000 ) {
 			ERROR.notify( "ERROR! No template found for " + _name + " of type " + _input.top().type + "! Skipped." );
 			continue;
 		}
-		_name	+= ".md";
-		
-		LOGGER.notify( ["build,"+_template, "Writing " + _template + " as " + _name + "."] );
-		write_to_file( PROGRAM.templates[? _template ], new FileText( PROGRAM.savePath + _name, false, true ), _input.pop() ).close();
+		LOGGER.notify( ["build,"+_template, "Writing " + _template + " as " + _name + ".md."] );
+		write_to_file( PROGRAM.templates[? _template ], new FileText( PROGRAM.savePath + _name + ".md", false, true ), _input.pop(), _name ).close();
 		
 		++actual;
 		

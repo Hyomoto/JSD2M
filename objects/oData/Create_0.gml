@@ -4,6 +4,20 @@
 
 PROGRAM	= id;
 
+save	= function() {
+	var _ini	= ini_open( "pref.ini" );
+	
+	ini_write_string( "paths", "load", loadPath );
+	ini_write_string( "paths", "save", savePath );
+	ini_write_string( "paths", "wiki", wikiPath );
+	ini_write_string( "settings", "clipboard", clipboard == true ? "true" : "false" );
+	ini_write_string( "settings", "objects", objects == true ? "true" : "false" );
+	ini_write_string( "settings", "constructors", constructors == true ? "true" : "false" );
+	ini_write_string( "settings", "functions", functions == true ? "true" : "false" );
+	
+	ini_close();
+	
+}
 ERROR	= new PublisherChannel()
 LOGGER	= new PublisherChannel();
 
@@ -12,6 +26,9 @@ savePath	= "";
 wikiPath	= "";
 
 clipboard	= false;
+objects		= true;
+constructors= true;
+functions	= true;
 
 window_set_caption( "JSDocToMarkdown" );
 

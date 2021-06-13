@@ -24,7 +24,7 @@ function FileParser( _divider ) : Parser( _divider ) constructor {
 		
 	}
 	static next_line	= function() {
-		if ( source == undefined ) { return; }
+		if ( source == undefined || source.eof() ) { return; }
 		
 		content	= string_trim( source.read() );
 		reset();

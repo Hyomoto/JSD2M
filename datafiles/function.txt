@@ -1,7 +1,11 @@
-|Jump To|[`Go Back`]({$wiki.index})|[Arguments](#arguments)|
-|---|---|---|---|---|
+|Jump To|[`Go Back`]({$wikiIndex})|[Arguments](#arguments)|
+|---|---|---|
 >## {$header}
 *Returns:* [{$returns}]({$returns})
+
+$if throws
+*Throws:* {$throws}
+$endif
 
 $if description
 {$description}

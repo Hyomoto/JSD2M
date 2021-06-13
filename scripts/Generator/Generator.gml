@@ -5,7 +5,9 @@ function Generator() constructor {
 		var _stack	= new DsStack();
 		
 		static __illegal	= new Array(["if", "else", "repeat", "while", "do", "until", "for", "switch", "break", "continue", "exit", "with", "return", "var" ]);
-		static __parser		= new FileParser(" \t(").parse( _source );
+		static __parser		= new FileParser(" \t(");
+		
+		__parser.parse( _source );
 		
 		if ( not _source.exists() ) {
 			throw FileNotFoundException;
@@ -39,9 +41,11 @@ function Generator() constructor {
 				category: "Default",
 				index: undefined
 			},
+			overloads: [],
 			methods: [],
 			variables: [],
 			returns: "N/A `undefined`",
+			name: "noname"
 		}};
 		
 		var _last	= __parser.source.next;
@@ -49,8 +53,17 @@ function Generator() constructor {
 		var _file	= __file();
 		var _layer	= _start_at;
 		
-		if ( _layer == 1 ) { _stack.push( _file ); }
-		
+		if ( _layer == 1 ) {
+			if ( PROGRAM.objects == false ) { return _stack; }
+			
+			var _path	= filename_path( _source.name );
+			
+			_file.name	= string_delete( _path, 1, string_last_pos( "\\", _path ) );
+			_file.name	= string_copy( _file.name, 1, string_length( _file.name ) - 1 );
+			
+			_stack.push( _file );
+			
+		}
 		var _read; while ( not __parser.eof() ) {
 			if ( __parser.copy( 3 ) == "///" ) {
 				__parser.advance( 4 );
@@ -62,6 +75,12 @@ function Generator() constructor {
 				if ( _result == undefined ) {
 					safe_throw( JSDocNotFoundException, [ __parser.source.toString(), _tag, __parser.line() ] );
 					
+				} else if ( _result == IGNORE ) {
+					__parser.next_line();
+					_layer	+= __parser.count( "{" ) - __parser.count( "}" );
+					__parser.next_line();
+					_last	= __parser.source.next;
+					
 				} else if ( is_array( _lump[$ _result[ 0 ] ] ) ) {
 					array_push( _lump[$ _result[ 0 ] ], _result[ 1 ] );
 					
@@ -69,8 +88,15 @@ function Generator() constructor {
 					_lump[$ _result[ 0 ] ] = _result[ 1 ];
 					
 				}
+				continue;
 				
 			} else {
+				if ( __parser.has_next() == false || string_copy( __parser.peek(), 1, 2 ) == "//" ) {
+					__parser.next_line();
+					_last	= __parser.source.next;
+					continue;
+					
+				}
 				switch ( _layer ) {
 					case 0 :
 						switch ( __parser.next() ) {
@@ -79,6 +105,9 @@ function Generator() constructor {
 							// parse function header
 								_file.header[$ "name" ]	= string_copy( _string, 1, string_pos( "(", _string ) - 1 );
 								_file.header[$ "arguments" ] = string_explode( string_copy( _string, string_pos( "(", _string ) + 1, string_length( _string ) - string_pos( "(", _string ) - 1 ), ",", true );
+								
+								_file.name	= _file.header[$ "name" ];
+								
 							// create placeholder arguments
 								var _i = 0; repeat( array_length( _file.header.arguments ) ) { _file.header.arguments[ _i ] = new Argument( _file.header.arguments[ _i ] ); ++_i; }
 							// fill in file from lump
@@ -86,21 +115,47 @@ function Generator() constructor {
 									_file.header.arguments[ _i ]	= _lump.arguments[ _i ];
 									++_i;
 								}
-								var _h = [ "description", "example", "output", "returns" ];
+								if ( _i < array_length( _file.header.arguments ) ) {
+									var _message	= "";
+									
+									repeat( array_length( _file.header.arguments ) - _i ) {
+										if ( _message != "" ) { _message += ", "; }
+										_message += _file.header.arguments[ _i ].name;
+										++_i;
+									}
+									console.add_message( "error", "No metadata for " + _message + " for method \"" + _file.name + "\"." );
+									
+								}
+								var _h = [ "description", "example", "output", "returns", "throws" ];
 								
 								var _i = 0; repeat( array_length( _h ) ) {
 									if ( _lump[$ _h[ _i ] ] != undefined ) {
 										_file[$ _h[ _i ] ]	= _lump[$ _h[ _i ] ];
 										
+									} else if ( _h[ _i ] == "description" ) {
+										console.add_message( "error", "No description provided for method \"" + _file.name + "\"." );
+									
 									}
 									++_i;
-									
+								
 								}
 							// if this is a function
 								if ( string_pos( "constructor", __parser.remaining() ) == false ) {
 									_file.type	= "function";
 									
-									file_read_to( _target, "{", "}" );
+									do {
+										_layer	+= __parser.count( "{" ) - __parser.count( "}" );
+										__parser.next_line();
+										
+									} until ( _layer == 0 || __parser.eof() );
+									
+									_last	= __parser.source.next;
+									
+									if ( PROGRAM.functions ) {
+										// push creation to the stack
+										_stack.push( _file );
+										
+									}
 									
 								} else {
 									_file.type	= "constructor";
@@ -111,11 +166,23 @@ function Generator() constructor {
 										_file[$ "implements" ]	= strc( _string, 1, string_pos( "(", _string ) - 1 );
 										
 									}
-									++_layer;
+									if ( PROGRAM.constructors ) {
+										// push creation to the stack
+										_stack.push( _file );
+										++_layer;
+										
+									} else {
+										do {
+											_layer	+= __parser.count( "{" ) - __parser.count( "}" );
+											__parser.next_line();
+											
+										} until ( _layer == 0 || __parser.eof() );
+										
+										_last	= __parser.source.next;
+										
+									}
 									
 								}
-							// push creation to the stack
-								_stack.push( _file );
 							// reset file
 								_file	= __file();
 							// reset lump
@@ -139,10 +206,19 @@ function Generator() constructor {
 					// not a variable or a method, continue
 						if ( string_pos( "=", __parser.toString() ) == 0 ) { break; }
 						
-						var _string	= string_explode( __parser.toString(), "=", true );
+						var _string	= __parser.toString();
+						
+						var _string	= string_explode( _string, "=", true );
+						
+						if ( string_pos( ".", _string[ 0 ] ) > 0 ) { break; }
 						
 					// method
 						if ( string_pos( "function", _string[ 1 ] ) == 1 ) {
+							
+						// check for overload
+							var _overload	= string_pos( "@overload", __parser.remaining() ) > 0;
+							var _target		=  _overload ? _stack.top().overloads : _stack.top().methods;
+						// Concantate string
 							var _string	= strc( __parser.remaining(), 1, string_pos( ")", __parser.remaining() ) );
 						// strip static if applicable
 							if ( string_copy( _string, 1, 6 ) == "static" ) { _string = strd( _string, 1, 6 ); }
@@ -153,11 +229,25 @@ function Generator() constructor {
 								_method.arguments[ _i ]	= _lump.arguments[ _i ];
 								++_i;
 							}
-							var _h = [ "description", "returns" ];
+							if ( _i < array_length( _method.arguments ) && !_overload ) {
+								var _message	= "";
+								
+								repeat( array_length( _method.arguments ) - _i ) {
+									if ( _message != "" ) { _message += ", "; }
+									_message += _method.arguments[ _i ].name;
+									++_i;
+								}
+								console.add_message( "error", "No metadata for " + _message + " for method \"" + _method.name + "\"." );
+								
+							}
+							var _h = [ "description", "returns", "throws" ];
 							
 							var _i = 0; repeat( array_length( _h ) ) {
 								if ( _lump[$ _h[ _i ] ] != undefined ) {
 									_method[$ _h[ _i ] ]	= _lump[$ _h[ _i ] ];
+									
+								} else if ( _h[ _i ] == "description" ) {
+									console.add_message( "error", "No description provided for method \"" + _method.name + "\"." );
 									
 								}
 								++_i;
@@ -165,7 +255,7 @@ function Generator() constructor {
 							}
 							_method.toLink();
 							
-							array_push( _stack.top().methods, _method );
+							array_push( _target, _method );
 							
 							_lump	= __lump();
 							
@@ -176,28 +266,46 @@ function Generator() constructor {
 							if ( __illegal.contains( __parser.peek() ) > -1 ) { break; }
 							if ( string_pos( ".", __parser.peek() ) > 0 ) { break; }
 							
-							array_push( _stack.top().variables, new Variable( __parser.next(), _lump[$ "description" ] != undefined ? _lump.description : "No description." ) );
+							if ( __parser.peek() == "static" ) { __parser.next(); }
 							
+							var _name	= __parser.next();
+							
+							__parser.next();
+							
+							var _default = string_replace_all( _lump[$ "output" ] == undefined ? __parser.remaining() : _lump[$ "output" ], ";", "" );
+							
+							if ( _lump[$ "variable" ] == undefined ) {
+								array_push( _stack.top().variables, { name: _name, type: "undef", initial: _default, description: "No description." });
+								console.add_message( "error", "No metadata for variable \"" + _name + "\"." );
+								
+							} else {
+								array_push( _stack.top().variables, { name: _name, type: _lump.variable.type, initial: _default, description: _lump.variable.desc });
+								
+							}
 							_lump	= __lump();
 							
 						}
+						_last = __parser.source.next;
+						
 						break;
 						
 					default : // everything else is GARBAGE
 						_layer	+= __parser.count( "{" ) - __parser.count( "}" );
+						
+						_last	= __parser.source.next;
 						
 						break;
 						
 				}
 				
 			}
-			if ( _last != __parser.source.next ) {
-				_last	= __parser.source.next;
+			//if ( _last != __parser.source.next ) {
+			//	_last	= __parser.source.next;
 				
-			} else {
+			//} else {
 				__parser.next_line();
 				
-			}
+			//}
 			
 		}
 		return _stack;

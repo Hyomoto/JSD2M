@@ -4,10 +4,10 @@ function string_find_variable( _string, _source ) {
 	__parser.parse( _string );
 	
 	try {
-		var _var	= variable_struct_get( _source, __parser.next() );
+		var _var	= _source[$ __parser.next() ];
 		
 		while ( __parser.has_next() ) {
-			_var	= variable_struct_get( _var, __parser.next() );
+			_var	= _var[$ __parser.next() ];
 			
 		}
 		

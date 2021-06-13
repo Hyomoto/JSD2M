@@ -6,10 +6,12 @@ interface.onEnter	= function() {
 	
 }
 interface.onUp	= function() {
-	var _file	= get_open_filename( "yyp|*.yyp", "" );
+	var _file	= get_open_filename( "GMS2 Project File(*.yyp)|*.yyp", "" );
 	
 	if ( _file == "" ) { return; }
 	
 	textbox_load.set_text( filename_path( _file ) );
+	
+	PROGRAM.save();
 	
 }

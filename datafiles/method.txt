@@ -1,12 +1,18 @@
 > ### {$method}
 $if method.returns
 *Returns:* {$method.returns}
+$if method.throws
+
+$endif
+$endif
+$if method.throws
+*Throws:* {$method.throws}
 $endif
 |Name|Type|Purpose|
 |---|---|---|
 $if method.arguments
 $--foreach k in method.arguments
-|{$k.name}|`{$k.type}`|{$k.description}|
+|{$k.name}|{$k.type}|{$k.description}|
 $--endfor
 $else
 |None|||

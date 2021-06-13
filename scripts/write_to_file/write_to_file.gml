@@ -2,7 +2,8 @@
 /// @param template	
 /// @param target	
 /// @param lump	
-function write_to_file( _template, _target, _lump ){
+/// @param self
+function write_to_file( _template, _target, _lump, __Self__ ){
 	static __parser	= new Parser();
 	static __strc	= function( _string, _x, _y ) { return string_trim( string_copy( _string, _x, _y ) ); }
 	static __strd	= function( _string, _x, _y ) { return string_trim( string_delete( _string, _x, _y ) ); }
@@ -100,7 +101,9 @@ function write_to_file( _template, _target, _lump ){
 						
 					}
 				// this will be our local variable packer, push k to j
-					var _l = {}; variable_struct_set( _l, _j, _k[ 0 ] );
+					var _l = {};
+					variable_struct_set( _l, _j, _k[ 0 ] );
+					variable_struct_set( _l, "self", __Self__ );
 				// push l to source
 					_source.push( _l );
 				// push this loop to repeat

@@ -12,5 +12,7 @@ interface.onUp	= function() {
 	
 	textbox_save.set_text( filename_path( _file ) );
 	
+	PROGRAM.save();
+	
 }
 enable	= true;
