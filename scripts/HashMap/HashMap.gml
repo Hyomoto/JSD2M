@@ -1,7 +1,7 @@
 /// @func HashMap
 /// @desc    Creates a hash table-type structure.
 /// @wiki Core-Index Data Structures
-function HashMap() constructor {
+function HashMap() : __Struct__() constructor {
     /// @param {string}	key		The key used to look up the value
 	/// @param {mixed}	value	The value to assign to the key
     /// @desc	Sets the given key in the dictionary to the provided value.  If the key is not a
@@ -65,7 +65,7 @@ function HashMap() constructor {
 	///		InvalidArgumentType will be thrown.
 	/// @returns bool
 	/// @throws InvalidArgumentType
-	static contains	= function( _key ) {
+	static key_exists	= function( _key ) {
 		if ( is_string( _key ) == false ) { throw new InvalidArgumentType( "key_exists", 0, _key, "string" ); }
 		
 		return variable_struct_exists( __Content, _key );
@@ -125,4 +125,6 @@ function HashMap() constructor {
     /// @desc    The internal struct which holds the key/value pairs.
     __Content	= {}
     
+	__Type__.add( HashMap );
+	
 }

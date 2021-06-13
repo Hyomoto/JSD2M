@@ -14,12 +14,12 @@ Message	= function( _text, _filters ) constructor {
 add_filter	= function( _filter ) {
 	var _found	= filter.contains( _filter );
 	
-	if ( _found == -1 ) {
-		if ( filter.get( 0 ) == "all" ) {
-			filter.remove( 0 );
+	if ( not _found ) {
+		if ( filter.index( 0 ) == "all" ) {
+			filter.pop( 0 );
 			
 		}
-		filter.add( _filter );
+		filter.push( _filter );
 		
 		filter_messages();
 		
@@ -29,11 +29,11 @@ add_filter	= function( _filter ) {
 remove_filter	= function( _filter ) {
 	var _found	= filter.contains( _filter );
 	
-	if ( _found > -1 ) {
+	if ( _found ) {
 		filter.remove( _found );
 		
 		if ( filter.size() == 0 ) {
-			filter.add( "all" );
+			filter.push( "all" );
 			
 		}
 		filter_messages();
@@ -47,13 +47,13 @@ filter_messages	= function() {
 	var _i = 0; repeat( messages.size() ) {
 		var _message	= messages.find_index( _i++ );
 		
-		if ( _message.has( filter.toArray() ) ) {
+		if ( _message.has( filter.to_array() ) ) {
 			display.add( _message );
 			
 		}
 		
 	}
-	surface.redraw	= true;
+	surface.redraw();
 	
 	offset	= 0;
 	
@@ -63,16 +63,16 @@ add_message	= function( _filters, _text ) {
 	
 	messages.add( _message );
 	
-	if ( filter == undefined || _message.has( filter.toArray() ) ) {
+	if ( filter == undefined || _message.has( filter.to_array() ) ) {
 		display.add( _message );
-		surface.redraw	= true;
+		surface.redraw();
 		
 	}
 	
 }
 messages	= new DsList();
 display		= new DsList();
-filter		= new ArrayList(["all"]);
+filter		= new ArrayList().from_array( ["all"] );
 interface	= new PointerSimpleMouse( new ShapeRectangle( bbox_left, bbox_top, bbox_right - bbox_left + 1, bbox_bottom - bbox_top + 1 ) );
 surface		= new Surface( interface.shape.w, interface.shape.h );
 offset		= 0;

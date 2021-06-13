@@ -1,9 +1,3 @@
-// # FAST engine version
-#macro __FAST_version	"3.4.1"
-#macro __FAST_date		"02/24/2021"
-
-#macro FAST_DISABLE_EVENTS	false
-
 // # whether to include the built-in debugger
 #macro FAST_DEBUGGER_ENABLE	true
 

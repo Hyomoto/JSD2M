@@ -134,7 +134,7 @@ function GamepadManager() {
 			++_i;
 			
 		}
-		var _event	= new FrameEvent( FAST.ASYNC_SYSTEM, 0, undefined, function() {
+		var _event	= new FrameEvent( FAST.ASYNC_SYSTEM, 0, function() {
 			switch ( async_load[? "event_type" ] ) {
 				case "gamepad discovered" : case "gamepad lost" :
 					publisher.channel_notify( async_load[? "event_type" ], async_load[? "pad_index" ] );
@@ -144,7 +144,7 @@ function GamepadManager() {
 			}
 
 		});
-		var _event	= new FrameEvent( FAST.STEP_BEGIN, 0, undefined, function() {
+		var _event	= new FrameEvent( FAST.STEP_BEGIN, 0, function() {
 			var _i = 0; repeat ( gamepad_get_device_count() ) {
 				if ( gamepad_is_connected( _i ) ) {
 					ds_queue_enqueue( padQueue, _i );

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Structs",
-    "path": "folders/FAST/Core/Structs.yy",
+    "name": "array",
+    "path": "folders/FAST/Core/Functions/array.yy",
   },
   "resourceVersion": "1.0",
-  "name": "HashTable",
+  "name": "array_intersection",
   "tags": [],
   "resourceType": "GMScript",
 }

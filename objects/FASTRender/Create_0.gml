@@ -10,12 +10,12 @@ RenderManager().instance	= id;
 application_surface_draw_enable( false );
 
 if ( RenderManager().bUseViews ) {
-	var _event	= new FrameEvent( FAST.ROOM_START, 0, undefined, function() {
+	var _event	= new FrameEvent( FAST.ROOM_START, 0, function() {
 		RenderManager().set_resolution( view_wport[ 0 ], view_hport[ 0 ] );
 		
 	}).once();
 	
-	var _event	= new FrameEvent( FAST.ROOM_START, 0, undefined, function() {
+	var _event	= new FrameEvent( FAST.ROOM_START, 0, function() {
 		view_enabled		= true;
 		view_visible[ 0 ]	= true;
 		//view_wport[ 0 ]		= RenderManager().render_width;

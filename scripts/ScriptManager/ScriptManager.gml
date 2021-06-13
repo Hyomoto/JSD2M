@@ -126,7 +126,7 @@ function ScriptManager(){
 		casts[? "string" ]	= function( _a ) { return string( _a ); }
 		casts[? "real" ]	= function( _a ) { return string_to_real( string( _a ) ); }
 		
-		funcs[? "trace" ]	= function( _value ) { System.write( _value ); };
+		funcs[? "trace" ]	= function( _value ) { syslog( _value ); };
 		funcs[? "errors" ]	= function() { return errors.size(); }
 		funcs[? "error" ]	= function( _index ) { return errors.pop(); }
 		funcs[? "error_clear" ]	= function() { errors.clear() }

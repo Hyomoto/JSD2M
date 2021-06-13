@@ -4,6 +4,7 @@ loadingbar.reset();
 processed		= 0;
 timeFrame		= new Timer();
 timeTotal		= new Timer( "$S seconds", 2 );
+wiki			= new TOC();
 stack			= undefined;
 total			= 0;
 actual			= 0;

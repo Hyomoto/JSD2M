@@ -37,10 +37,7 @@ function Generator() constructor {
 			implements: undefined,
 			example: undefined,
 			output: undefined,
-			wiki:{
-				category: "Default",
-				index: undefined
-			},
+			wiki: undefined,
 			overloads: [],
 			methods: [],
 			variables: [],
@@ -126,7 +123,7 @@ function Generator() constructor {
 									console.add_message( "error", "No metadata for " + _message + " for method \"" + _file.name + "\"." );
 									
 								}
-								var _h = [ "description", "example", "output", "returns", "throws" ];
+								var _h = [ "description", "example", "output", "returns", "throws", "wiki" ];
 								
 								var _i = 0; repeat( array_length( _h ) ) {
 									if ( _lump[$ _h[ _i ] ] != undefined ) {

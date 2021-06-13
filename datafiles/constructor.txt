@@ -1,4 +1,4 @@
-|Jump To|[`Go Back`]({$wikiIndex})|
+|Jump To|[`Go Back`]({$wiki.index})|
 |---|---|
 $if header.arguments
 $appendto -1,[Arguments](#arguments)|

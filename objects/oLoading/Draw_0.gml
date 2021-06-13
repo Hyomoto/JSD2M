@@ -29,6 +29,6 @@ if ( fg.update() ) {
 	fg.reset();
 	
 }
-fg.draw_part( 0, 0, w * perc, h, x, y );
+draw_surface_part( fg.__Surface, 0, 0, w * perc, h, x, y );
 
 draw_set_halign( fa_left );

@@ -2,8 +2,8 @@ update	= function( _display, _percent ) {
 	display	= _display;
 	perc	= _percent;
 	
-	bg.redraw	= true;
-	fg.redraw	= true;
+	bg.redraw();
+	fg.redraw();
 	
 }
 reset	= function() {

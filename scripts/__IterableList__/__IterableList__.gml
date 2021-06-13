@@ -4,6 +4,7 @@
 ///		another, despite any underlying differences in structure choice.  They can be used as stacks,
 ///		queues, unordered or ordered lists, and sets.  When used as an ordered list, binary search is
 ///		used for insertion and traversal, but this behavior can be changed by overwriting __Search.
+/// @wiki Core-Index Abstract
 function __IterableList__() : __Struct__() constructor {
 	/// @desc Retrieves the value at the given index and sets the traversal pointer
 	static index	= function(i) {}	// @overload
@@ -160,7 +161,7 @@ function __IterableList__() : __Struct__() constructor {
 		if ( _f == undefined ) { _f = function( _v ) { return _v; }}
 		if ( is_method( _f ) == false ) { throw new InvalidArgumentType( "unique", 1, _f, "method" ); }
 		
-		if ( is_array( _list ) ) { var _a = new Array(); _a.__Content = _list; _list = _a; }
+		if ( is_array( _list ) ) { _list = new __Self__().from_array( _list ); }
 		if ( struct_type( _list, __IterableList__ ) == false ) { throw new InvalidArgumentType("intersection", 0, _list, "__IterableList__" ); }
 		if ( _list.size() == 0 && size() == 0 ) { return new __Self__(); }
 		
@@ -199,7 +200,7 @@ function __IterableList__() : __Struct__() constructor {
 		if ( _f == undefined ) { _f = function( _v ) { return _v; }}
 		if ( is_method( _f ) == false ) { throw new InvalidArgumentType( "unique", 1, _f, "method" ); }
 		
-		if ( is_array( _list ) ) { var _a = new Array(); _a.__Content = _list; _list = _a; }
+		if ( is_array( _list ) ) { _list = new __Self__().from_array( _list ); }
 		if ( struct_type( _list, __IterableList__ ) == false ) { throw new InvalidArgumentType("intersection", 0, _list, "__IterableList__" ); }
 		if ( _list.size() == 0 || size() == 0 ) { return new __Self__(); }
 		
@@ -236,7 +237,7 @@ function __IterableList__() : __Struct__() constructor {
 		if ( _f == undefined ) { _f = function( _v ) { return _v; }}
 		if ( is_method( _f ) == false ) { throw new InvalidArgumentType( "unique", 1, _f, "method" ); }
 		
-		if ( is_array( _list ) ) { var _a = new Array(); _a.__Content = _list; _list = _a; }
+		if ( is_array( _list ) ) { _list = new __Self__().from_array( _list ); }
 		if ( struct_type( _list, __IterableList__ ) == false ) { throw new InvalidArgumentType("difference", 0, _list, "__IterableList__" ); }
 		
 		if ( _f == undefined ) { _f = string; }
@@ -261,14 +262,6 @@ function __IterableList__() : __Struct__() constructor {
 			
 		}
 		return _iter;
-		
-		//index(0); repeat( size() ) {
-		//	var _next	= next();
-			
-		//	if ( _list.contains( _next, _f ) == false ) { _iter.push( _next ); _list.push( _next ); }
-			
-		//}
-		//return _iter;
 		
 	}
 	/// @desc	Returns a new {$self} containing all the elements of this list reversed.
@@ -383,7 +376,7 @@ function __IterableList__() : __Struct__() constructor {
 					
 					return _v > index( _m ) ? _m + 1 : _m;
 					
-				} 
+				}
 				break;
 				
 			case false	:
@@ -403,6 +396,51 @@ function __IterableList__() : __Struct__() constructor {
 		return self;
 		
 	}
+	/// @param {__InputStream__}	input	An InputStream to read from.
+	/// @param {bool}				close	If false, the stream will not be closed after reading
+	/// @desc	Populates this structure with values from the provided input stream.  By default,
+	///		the stream will be closed afterwards.  If close is false, however, this behavior will
+	///		be overridden.  If input is not an (#__InputStream__), InvalidArgumentType will be
+	///		thrown.
+	/// @throws InvalidArgumentType
+	/// @returns self
+	static from_input	= function( _input, _close ) {
+		if ( struct_type( _input, __InputStream__ ) == false ) { throw new InvalidArgumentType( "from_input", 0, _input, "__InputStream__" ); }
+		clear();
+		while( _input.finished() == false ) {
+			push( _input.read() );
+			
+		}
+		if ( _close != false ) { _input.close(); }
+		
+		return self;
+		
+	}
+	/// @param {__OutputStream__}	output	An OutputStream to write to
+	/// @param {bool}				close	If false, the stream will not be closed after writing
+	/// @param {method}				*func	If provided, is used to determine what is sent to the stream.
+	/// @desc	Writes this data structure to the provided output stream. By default, the stream will
+	///		be closed after writing.  If close is false, however, this behavior will be overridden. If
+	///		output is not an (#__OutputStream__) or func is not a method, InvalidArgumentType will be
+	///		thrown.
+	/// @throws InvalidArgumentType
+	/// @returns output
+	static to_output	= function( _output, _close, _f ) {
+		if ( struct_type( _output, __OutputStream__ ) == false ) { throw new InvalidArgumentType( "to_output", 0, _output, "__OutputStream__" ); }
+		
+		if ( _f == undefined ) { _f = function( _v ) { return _v; }}
+		
+		if ( is_method( _f ) == false ) { throw new InvalidArgumentType( "to_array", 1, _f, "method" ); }
+		
+		index(0); repeat( size() ) {
+			_output.write( _f( next() ) );
+			
+		}
+		if ( _close != false ) { _output.close(); }
+		
+		return _output;
+		
+	}
 	/// @param {array}	array	An array of values
 	/// @desc	Populates this structure with values from the provided array.
 	static from_array	= function( _a ) {
@@ -415,7 +453,6 @@ function __IterableList__() : __Struct__() constructor {
 		return self;
 		
 	}
-	/// @desc	Converts this data structure into an array and returns it.
 	/// @param	{method}	*func	If provided, is used to populate the array.
 	/// @desc	Returns this list as an array.  If func is defined, the value is passed into
 	///		the function and the return is written instead.  If func is provided, but not
@@ -507,6 +544,7 @@ function __IterableList__() : __Struct__() constructor {
 	__Dupes		= true;
 	/// @var {method}	The function used to perform ordered insertions
 	__OrderedBy	= undefined;
+	
 	__Type__.add( __IterableList__ );
 	
 }

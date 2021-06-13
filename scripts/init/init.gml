@@ -116,7 +116,7 @@ GENERATOR.add_jsdoc( "throws", function( _parser ) {
 	
 });
 GENERATOR.add_jsdoc( "wiki", function( _parser ) {
-	var _wiki	= { index: "Default", category: undefined }
+	var _wiki	= { index: "", category: "Default" }
 	
 	_wiki[$ "index" ] = _parser.next();
 	

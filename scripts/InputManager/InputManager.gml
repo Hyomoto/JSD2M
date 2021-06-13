@@ -28,7 +28,7 @@ function InputManager() {
 				}
 				if ( event == undefined ) {
 					last	= true;
-					event	= new FrameEvent( FAST.STEP_END, 0, undefined, function() {
+					event	= new FrameEvent( FAST.STEP_END, 0, function() {
 						if ( state() == false ) {
 							event.discard();
 							
@@ -72,8 +72,7 @@ function InputManager() {
 		}
 		
 	}
-	static instance	= new Feature( "FAST Input Handling", "1.0a", "10/18/2020", new manager() );
-	return instance.struct;
+	static instance	= new manager() ;
+	return instance;
 	
 }
-InputManager();

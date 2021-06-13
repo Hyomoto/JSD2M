@@ -1,4 +1,4 @@
-|Jump To|[`Go Back`]({$wikiIndex})|[Arguments](#arguments)|
+|Jump To|[`Go Back`]({$wiki.index})|[Arguments](#arguments)|
 |---|---|---|
 >## {$header}
 *Returns:* [{$returns}]({$returns})

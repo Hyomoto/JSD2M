@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "JSDocToMarkdown",
-    "path": "JSDocToMarkdown.yyp",
+    "name": "array",
+    "path": "folders/FAST/Core/Functions/array.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Script154",
+  "name": "array_insertion_sort",
   "tags": [],
   "resourceType": "GMScript",
 }

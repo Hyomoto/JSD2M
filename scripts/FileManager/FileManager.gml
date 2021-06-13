@@ -17,9 +17,8 @@ function FileManager() {
 		}
 		
 	}
-	static instance	= new Feature( "FAST File Handling", "1.0", "10/11/2020", new manager() );
-	
-	return instance.struct;
+	static instance	= new manager();
+	return instance;
 	
 }
 FileManager();

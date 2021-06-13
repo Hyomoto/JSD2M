@@ -15,7 +15,7 @@ function LinkedList() : __IterableList__() constructor {
 		}
 		
 	}
-	/// @func	Seeks the next value in the list after the last read position, or EOL if the list has
+	/// @desc	Seeks the next value in the list after the last read position, or EOL if the list has
 	///		been fully traversed.  Can use index() to set the next read position.
 	/// @returns mixed or EOL
 	static next	= function() {
@@ -30,7 +30,7 @@ function LinkedList() : __IterableList__() constructor {
 		return _value;
 		
 	}
-	/// @func	Seeks the previous value in the list before the last read position, or EOL if the front
+	/// @desc	Seeks the previous value in the list before the last read position, or EOL if the front
 	///		of the list has been reached.  Can use index() to set the next read position.
 	/// @returns value or EOL
 	static previous	= function() {

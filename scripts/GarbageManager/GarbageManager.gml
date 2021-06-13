@@ -47,7 +47,7 @@ function GarbageManager() {
 		gen1	= [];
 		cycle	= 0;
 		
-		event	= new FrameEvent( FAST.STEP, _rate, undefined, function() {
+		event	= new FrameEvent( FAST.STEP, _rate, function() {
 			if ( array_length( gen1 ) > 0 ) {
 				if ( weak_ref_alive( gen1[ cycle ].ref ) ) {
 					++cycle
@@ -73,7 +73,7 @@ function GarbageManager() {
 		});
 		
 	}
-	static instance	= new Feature( "FAST Garbage", "1.0", "10/20/2020", new manager( argument_count == 0 ? 1 : argument[ 0 ] ) );
-	return instance.struct;
+	static instance	= new manager( argument_count == 0 ? 1 : argument[ 0 ] );
+	return instance;
 	
 }

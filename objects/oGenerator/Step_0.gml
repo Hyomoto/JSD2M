@@ -31,18 +31,26 @@ while( timeFrame.elapsed() < 500000 ) {
 	var _name, _template	= "";
 	
 	repeat( _input.size() ) {
-		switch ( _input.top().type ) {
-			case "object" : _template = "object"; _name = _input.top().name; break;			
-			case "function" : _template = "function"; _name = _input.top().header.name; break;
-			case "constructor" : _template = "constructor" _name = _input.top().header.name; break;
+		var _thing	= _input.pop();
+		
+		switch ( _thing.type ) {
+			case "object" : _template = "object"; _name = _thing.name; break;			
+			case "function" : _template = "function"; _name = _thing.header.name; break;
+			case "constructor" : _template = "constructor" _name = _thing.header.name; break;
 		}
 		if ( PROGRAM.templates[? _template ] == undefined ) {
-			ERROR.notify( "ERROR! No template found for " + _name + " of type " + _input.top().type + "! Skipped." );
+			ERROR.notify( "ERROR! No template found for " + _name + " of type " + _thing.type + "! Skipped." );
 			continue;
 		}
+		syslog( _thing );
 		LOGGER.notify( ["build,"+_template, "Writing " + _template + " as " + _name + ".md."] );
-		write_to_file( PROGRAM.templates[? _template ], new FileText( PROGRAM.savePath + _name + ".md", false, true ), _input.pop(), _name ).close();
+		write_to_file( PROGRAM.templates[? _template ], new FileText( PROGRAM.savePath + _name + ".md", false, true ), _thing, _name ).close();
 		
+		// write to index
+		if ( _thing[$ "wiki" ] != undefined ) {
+			wiki.add( _thing.wiki.index, _thing.wiki.category, { name : _thing.header, path : _thing.name } );
+			
+		}
 		++actual;
 		
 	}

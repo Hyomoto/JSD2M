@@ -13,7 +13,7 @@ function RenderManager() {
 		static update_window	= function() {
 			if ( event != undefined ) { return; }
 			
-			event	= new FrameEvent( FAST.STEP, 0, undefined, function() {
+			event	= new FrameEvent( FAST.STEP, 0, function() {
 				var _scale	= min( display_get_width() / render_width, display_get_height() / render_height );
 				
 				_scale	*= scale_value;
@@ -86,7 +86,7 @@ function RenderManager() {
 		}
 		
 	}
-	static instance	= new Feature( "FAST Render", "1.2", "07/12/2020", new render( argument_count > 0 ? argument[ 0 ] : FASTRender ) );
-	return instance.struct;
+	static instance	= new render( argument_count > 0 ? argument[ 0 ] : FASTRender );
+	return instance;
 	
 }

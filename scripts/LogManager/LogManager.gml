@@ -34,8 +34,8 @@ function LogManager() {
 			
 		}
 		// close out all open loggers when program ends
-		close	= new FrameEvent( FAST.GAME_END, 0, undefined, function() {
-			System.write( "FAST Logging is shutting down..." );
+		close	= new FrameEvent( FAST.GAME_END, 0, function() {
+			syslog( "FAST Logging is shutting down..." );
 			
 			var _i	= 0; repeat( ds_list_size( list ) ) {
 				var _target	= ds_list_find_value( list, _i++ );
@@ -44,7 +44,7 @@ function LogManager() {
 					_target.close();
 				//}
 				//catch ( _ ) {
-				//	System.write( "  error :: Logger " + _target.name + " failed to close properly." );
+				//	syslog( "  error :: Logger " + _target.name + " failed to close properly." );
 					
 				//}
 				
@@ -55,8 +55,8 @@ function LogManager() {
 		list	= ds_list_create();
 		
 	}
-	static instance = new Feature( "FAST Logging", "1.1a", "10/10/2020", new manager() );
-	return instance.struct;
+	static instance = new manager();
+	return instance;
 	
 }
 LogManager();

@@ -44,17 +44,40 @@ function Dictionary() : HashMap() constructor {
     /// @throws InvalidArgumentType, ValueNotFound
     static lookup    = function( _key ) {
         if ( is_string( _key ) == false ) { throw new InvalidArgumentType( "lookup", 0, _key, "string" ); }
-        if ( variable_struct_exists( __Content, _key ) == false ) { throw new ValueNotFound( "lookup", _key ); }
+        if ( variable_struct_exists( __Content, _key ) == false ) { return new ValueNotFound( "lookup", _key ); }
         
 		__Last	= __Keys.find( _key );
 		
         return __Content[$ _key ];
         
     }
+	/// @desc	Returns the value of the last read key, or ValueNotFound if it doesn't exist.
+	/// @returns mixed or ValueNotFound
+	static peek	= function() {
+		if ( __Keys.size() == 0 || __Last == __Keys.size() || __Last == undefined ) { return new ValueNotFound( "peek", __Last, -1 ); }
+		
+		return __Content[$ __Keys.index( __Last ) ];
+		
+	}
+	/// @param {mixed}	value	The value to assign
+	/// @desc	Sets the last read key to the provided value.  If there was no last value read,
+	///		ValueNotFound is thrown.
+	/// @throws ValueNotFound
+	/// @returns self
+	static poke		= function( _value ) {
+		if ( __Keys.size() == 0 || __Last == undefined ) { throw new ValueNotFound( "poke", __Last, -1 ); }
+		
+		var _key	= __Keys.index( __Last );
+		
+        __Content[$ _key ]    = _value;
+        
+        return self;
+        
+	}
 	/// @desc	Returns the next key after the last key searched, or ValueNotFound if it doesn't exist.
 	/// @returns mixed or ValueNotFound
 	static first	= function() {
-		if ( __Keys.size() == 0 ) { return ValueNotFound( "next", "", -1 ); }
+		if ( __Keys.size() == 0 ) { return new ValueNotFound( "next", "", -1 ); }
 		
 		var _value	= __Keys.first();
 		
@@ -66,7 +89,7 @@ function Dictionary() : HashMap() constructor {
 	/// @desc	Returns the previous key after the last key searched, or ValueNotFound if it doesn't exist.
 	/// @returns mixed or ValueNotFound
 	static last		= function() {
-		if ( __Keys.size() == 0 ) { return ValueNotFound( "next", "", -1 ); }
+		if ( __Keys.size() == 0 ) { return new ValueNotFound( "next", "", -1 ); }
 		
 		__Last	= __Keys.size() - 1;
 		
@@ -76,22 +99,23 @@ function Dictionary() : HashMap() constructor {
 	/// @desc	Returns the next key after the last key searched, or ValueNotFound if it doesn't exist.
 	/// @returns mixed or ValueNotFound
 	static next		= function() {
-		if ( __Last == __Keys.size() ) { return ValueNotFound( "next", "", -1 ); }
+		if ( __Last == undefined || __Last == __Keys.size() ) { return new ValueNotFound( "next", "undefined", -1 ); }
+		if ( ++__Last == __Keys.size() ) {  return new ValueNotFound( "next", "undefined", -1 ); }
 		
-		return __Keys.index( ++__Last );
+		return __Keys.index( __Last );
 		
 	}
 	/// @desc	Returns the previous key after the last key searched, or ValueNotFound if it doesn't exist.
 	/// @returns mixed or ValueNotFound
 	static previous		= function() {
-		if ( __Last == 0 ) { return ValueNotFound( "next", "", -1 ); }
+		if ( __Last == undefined || __Last == 0 ) { return new ValueNotFound( "next", "", -1 ); }
 		
 		return __Keys.index( --__Last );
 		
 	}
 	/// @param
 	static search	= function( _pattern ) {
-		if ( size() == 0 ) { return ValueNotFound( "search", _pattern, -1 ); }
+		if ( size() == 0 ) { return new ValueNotFound( "search", _pattern, -1 ); }
 		if ( size() == 1 ) { return __Keys.index( 0 ); }
 		
 		var _i	= __Keys.find( _pattern );
@@ -132,6 +156,8 @@ function Dictionary() : HashMap() constructor {
 		
 		__Keys.__Content	= variable_struct_get_names( __Content );
 		
+		__Last	= undefined;
+		
 		array_sort( __Keys.__Content, true );
 		
 		return self;
@@ -147,11 +173,14 @@ function Dictionary() : HashMap() constructor {
 	static clear	= function() {
 		__Content	= {};
 		__Keys.clear();
+		__Last		= undefined;
 		
 	}
     /// @desc    The internal struct which holds the key/value pairs.
     __Content	= {}
-    __Keys		= new Array().order();
+    __Keys		= new ArrayList().order();
 	__Last		= undefined;
+	
+	__Type__.add( Dictionary );
 	
 }
