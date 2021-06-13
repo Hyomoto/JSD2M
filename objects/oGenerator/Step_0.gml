@@ -42,7 +42,6 @@ while( timeFrame.elapsed() < 500000 ) {
 			ERROR.notify( "ERROR! No template found for " + _name + " of type " + _thing.type + "! Skipped." );
 			continue;
 		}
-		syslog( _thing );
 		LOGGER.notify( ["build,"+_template, "Writing " + _template + " as " + _name + ".md."] );
 		write_to_file( PROGRAM.templates[? _template ], new FileText( PROGRAM.savePath + _name + ".md", false, true ), _thing, _name ).close();
 		

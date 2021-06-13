@@ -3,6 +3,7 @@
 function Generator() constructor {
 	static read_file	= function( _source, _start_at ) {
 		var _stack	= new DsStack();
+		var _errors	= new LinkedList();
 		
 		static __illegal	= new Array(["if", "else", "repeat", "while", "do", "until", "for", "switch", "break", "continue", "exit", "with", "return", "var" ]);
 		static __parser		= new FileParser(" \t(");
@@ -70,7 +71,9 @@ function Generator() constructor {
 				var _seek	= _file;
 				
 				if ( _result == undefined ) {
-					safe_throw( JSDocNotFoundException, [ __parser.source.toString(), _tag, __parser.line() ] );
+					_errors.push(["error", "JSDocNotFound :: Tag \"" + string( _tag ) + "\" not recognized " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "." ]);
+					
+					//safe_throw( JSDocNotFoundException, [ __parser.source.toString(), _tag, __parser.line() ] );
 					
 				} else if ( _result == IGNORE ) {
 					__parser.next_line();
@@ -89,6 +92,14 @@ function Generator() constructor {
 				
 			} else {
 				if ( __parser.has_next() == false || string_copy( __parser.peek(), 1, 2 ) == "//" ) {
+					repeat( _errors.size() ) {
+						var _error	= _errors.pop(0);
+						
+						if ( _file.type != "" ) { _error[ 0 ] += "," + _file.type; }
+						
+						LOGGER.notify( _error );
+						
+					}
 					__parser.next_line();
 					_last	= __parser.source.next;
 					continue;
@@ -120,7 +131,9 @@ function Generator() constructor {
 										_message += _file.header.arguments[ _i ].name;
 										++_i;
 									}
-									console.add_message( "error", "No metadata for " + _message + " for method \"" + _file.name + "\"." );
+									_errors.push(["error", "NoMetadata :: Function " + _file.name + " has no metadata for " + _message + " in " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "." ]);
+									
+									//LOGGER.notify([ "error", "No metadata for " + _message + " for method \"" + _file.name + "\"." ]);
 									
 								}
 								var _h = [ "description", "example", "output", "returns", "throws", "wiki" ];
@@ -130,8 +143,8 @@ function Generator() constructor {
 										_file[$ _h[ _i ] ]	= _lump[$ _h[ _i ] ];
 										
 									} else if ( _h[ _i ] == "description" ) {
-										console.add_message( "error", "No description provided for method \"" + _file.name + "\"." );
-									
+										_errors.push(["error", "NoDescription :: Function " + _file.name + " has no description in " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "."]);
+										
 									}
 									++_i;
 								
@@ -234,7 +247,8 @@ function Generator() constructor {
 									_message += _method.arguments[ _i ].name;
 									++_i;
 								}
-								console.add_message( "error", "No metadata for " + _message + " for method \"" + _method.name + "\"." );
+								_errors.push(["error", "NoMetadata :: Method " + _method.name + " has no metadata for " + _message + " in " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "." ]);
+								//_errors.push(["error", "NoMetadata :: Function " + _file.name + " has no metadata for " + _message + "." ]);
 								
 							}
 							var _h = [ "description", "returns", "throws" ];
@@ -244,7 +258,9 @@ function Generator() constructor {
 									_method[$ _h[ _i ] ]	= _lump[$ _h[ _i ] ];
 									
 								} else if ( _h[ _i ] == "description" ) {
-									console.add_message( "error", "No description provided for method \"" + _method.name + "\"." );
+									_errors.push(["error", "NoDescription :: Method " + _method.name + " has no description in " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "."]);
+									
+									//console.add_message( "error", "No description provided for method \"" + _method.name + "\"." );
 									
 								}
 								++_i;
@@ -273,7 +289,8 @@ function Generator() constructor {
 							
 							if ( _lump[$ "variable" ] == undefined ) {
 								array_push( _stack.top().variables, { name: _name, type: "undef", initial: _default, description: "No description." });
-								console.add_message( "error", "No metadata for variable \"" + _name + "\"." );
+								//console.add_message( "error", "No metadata for variable \"" + _name + "\"." );
+								_errors.push([ "error", "NoMetadata :: Variable \"" + _name + "\" has no metadata in " + filename_name( __parser.source.toString() ) + " at line " + string( __parser.line() ) + "." ]);
 								
 							} else {
 								array_push( _stack.top().variables, { name: _name, type: _lump.variable.type, initial: _default, description: _lump.variable.desc });

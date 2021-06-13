@@ -194,6 +194,7 @@
     {"id":{"name":"Array","path":"scripts/Array/Array.yy",},"order":0,},
     {"id":{"name":"string_pad","path":"scripts/string_pad/string_pad.yy",},"order":10,},
     {"id":{"name":"gfx_icons","path":"sprites/gfx_icons/gfx_icons.yy",},"order":6,},
+    {"id":{"name":"oButtonCopy","path":"objects/oButtonCopy/oButtonCopy.yy",},"order":13,},
     {"id":{"name":"database_load","path":"scripts/database_load/database_load.yy",},"order":0,},
     {"id":{"name":"TextFile","path":"scripts/TextFile/TextFile.yy",},"order":0,},
     {"id":{"name":"log_critical","path":"scripts/log_critical/log_critical.yy",},"order":0,},
@@ -318,7 +319,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"object.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "23.1.1.290",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "JSDocToMarkdown",

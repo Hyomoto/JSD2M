@@ -30,7 +30,7 @@ remove_filter	= function( _filter ) {
 	var _found	= filter.contains( _filter );
 	
 	if ( _found ) {
-		filter.remove( _found );
+		filter.remove( _filter );
 		
 		if ( filter.size() == 0 ) {
 			filter.push( "all" );

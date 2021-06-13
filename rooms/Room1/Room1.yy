@@ -39,6 +39,7 @@
             {"propertyId":{"name":"filter","path":"objects/oButtonFilter/oButtonFilter.yy",},"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"value":"\"object\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
             {"propertyId":{"name":"icon","path":"objects/oButton/oButton.yy",},"objectId":{"name":"oButton","path":"objects/oButton/oButton.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oButtonFilter","path":"objects/oButtonFilter/oButtonFilter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":560.0,"y":160.0,"resourceVersion":"1.0","name":"inst_2863230A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oButtonCopy","path":"objects/oButtonCopy/oButtonCopy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":160.0,"resourceVersion":"1.0","name":"inst_4EE52FB0","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances_1","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oButtonLoadFrom","path":"objects/oButtonLoadFrom/oButtonLoadFrom.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":32.0,"resourceVersion":"1.0","name":"inst_26029F01","tags":[],"resourceType":"GMRInstance",},
@@ -105,6 +106,7 @@
     {"name":"inst_563B33C8","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7A3304","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4D29F94","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_4EE52FB0","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

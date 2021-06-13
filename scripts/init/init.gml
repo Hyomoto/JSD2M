@@ -1,5 +1,5 @@
 #macro GENERATOR	global.__generator
-
+//error,build,function,constructor,object,macro
 RenderManager().set_scale( 0.7 );
 
 #macro APP_NAME		"JSDocToMarkdown"
