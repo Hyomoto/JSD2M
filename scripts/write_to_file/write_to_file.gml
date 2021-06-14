@@ -121,7 +121,7 @@ function write_to_file( _template, _target, _lump, __Self__ ){
 				// find target line
 					_j	= _target.next + string_to_real( _j ) - 1;
 					
-					_target.poke( _j, _target.peek( _j ) + string_replace_tags( _k, _source.top() ) );
+					_target.poke( _j, _target.peek( _j ) + string_replace_links( string_replace_tags( _k, _source.top() ), _source.top() ));
 					
 					continue;
 					
@@ -184,7 +184,7 @@ function write_to_file( _template, _target, _lump, __Self__ ){
 			
 		} else {
 		// not an operation, thus we write the read to our target file and convert tags
-			_target.write( string_replace_tags( _read, _source.top() ) );
+			_target.write( string_replace_links( string_replace_tags( _read, _source.top() ), _source.top() ));
 			
 		}
 		
